@@ -1,0 +1,207 @@
+[
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
+    "Method": "AddKendaraan",
+    "RelativePath": "api/Admin/addKendaraan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "kendaraan",
+        "Type": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Model.Kendaraan",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
+    "Method": "AddKerusakan",
+    "RelativePath": "api/Admin/addKerusakan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "kerusakan",
+        "Type": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Model.Kerusakan",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
+    "Method": "AddKey",
+    "RelativePath": "api/Admin/addKey",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Model.Key",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
+    "Method": "DeleteKendaraan",
+    "RelativePath": "api/Admin/deleteKendaraan/{platNomor}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "platNomor",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
+    "Method": "DeleteKerusakan",
+    "RelativePath": "api/Admin/deleteKerusakan/{platNomor}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "platNomor",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
+    "Method": "DeleteKey",
+    "RelativePath": "api/Admin/deleteKey/{username}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
+    "Method": "GetKendaraan",
+    "RelativePath": "api/Admin/getKendaraan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
+    "Method": "GetKendaraan",
+    "RelativePath": "api/Admin/getKendaraan/{platNomor}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "platNomor",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
+    "Method": "GetKerusakan",
+    "RelativePath": "api/Admin/getKerusakan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
+    "Method": "GetKey",
+    "RelativePath": "api/Admin/getKey",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
+    "Method": "UpdateKendaraan",
+    "RelativePath": "api/Admin/updateKendaraan/{platNomor}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "platNomor",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedKendaraan",
+        "Type": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Model.Kendaraan",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
+    "Method": "UpdateKerusakan",
+    "RelativePath": "api/Admin/updateKerusakan/{platNomor}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "platNomor",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedKerusakan",
+        "Type": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Model.Kerusakan",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
+    "Method": "UpdateKey",
+    "RelativePath": "api/Admin/updateKey/{username}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedKey",
+        "Type": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Model.Key",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

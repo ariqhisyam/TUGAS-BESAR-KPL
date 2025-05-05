@@ -1,0 +1,6 @@
+@TUGASBESAR_kelompok_SagaraDailyCheckUp_HostAddress = http://localhost:5069
+
+GET {{TUGASBESAR_kelompok_SagaraDailyCheckUp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TUGASBESAR_kelompok_SagaraDailyCheckUp.props" />
+</Project>
