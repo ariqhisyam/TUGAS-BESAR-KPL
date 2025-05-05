@@ -344,6 +344,28 @@
           }
         }
       }
+    },
+    "/api/Admin/setStatusKendaraan/{platNomor}": {
+      "put": {
+        "tags": [
+          "Admin"
+        ],
+        "parameters": [
+          {
+            "name": "platNomor",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -356,6 +378,10 @@
             "nullable": true
           },
           "platNomor": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
             "type": "string",
             "nullable": true
           }
@@ -374,6 +400,10 @@
             "nullable": true
           },
           "kendala": {
+            "type": "string",
+            "nullable": true
+          },
+          "catatan": {
             "type": "string",
             "nullable": true
           }

@@ -143,6 +143,22 @@
   },
   {
     "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
+    "Method": "SetStatusKendaraan",
+    "RelativePath": "api/Admin/setStatusKendaraan/{platNomor}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "platNomor",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
     "Method": "UpdateKendaraan",
     "RelativePath": "api/Admin/updateKendaraan/{platNomor}",
     "HttpMethod": "PUT",
