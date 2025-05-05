@@ -3,6 +3,7 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 public static class Menu
 {
@@ -74,19 +75,55 @@ public static class Menu
         var jsonContent = JsonSerializer.Serialize(key);
         var content = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
 
-        var response = await client.PostAsync($"{apiBaseUrl}/addKey", content);
+        try
+        {
+            var response = await client.PostAsync($"{apiBaseUrl}/addKey", content);
 
-  
+            if (response.IsSuccessStatusCode)
+                Console.WriteLine("Key berhasil dibuat.");
+            else
+                Console.WriteLine($"Gagal membuat key. Status: {response.StatusCode}");
+        }
+        catch (HttpRequestException ex)
+        {
+            Console.WriteLine("Terjadi kesalahan jaringan: " + ex.Message);
+        }
     }
 
-    // Method untuk menambahkan kendaraan
+    private static string FormatPlatNomor(string platNomor)
+    {
+        // Menggunakan regex untuk memisahkan plat nomor berdasarkan pola yang umum
+        // Contoh pola: "B 1221 SJT"
+        var regex = new System.Text.RegularExpressions.Regex(@"([A-Z]+)(\d+)([A-Z]+)");
+        var match = regex.Match(platNomor);
+
+        if (match.Success)
+        {
+            return $"{match.Groups[1].Value} {match.Groups[2].Value} {match.Groups[3].Value}";
+        }
+
+        return platNomor; // Jika format tidak sesuai, mengembalikan plat nomor seperti aslinya
+    }
+
     private static async Task AddKendaraan()
     {
         Console.WriteLine("Masukkan Merek Kendaraan: ");
         string merek = Console.ReadLine();
 
-        Console.WriteLine("Masukkan Plat Nomor: ");
+        Console.WriteLine("Masukkan Plat Nomor (contoh: B1221SJT): ");
         string platNomor = Console.ReadLine();
+
+        // Validasi bahwa plat nomor harus memiliki format dengan spasi, contoh: B 1234 XYZ
+        string validPattern = @"^[A-Z]{1,2} [0-9]{1,4} [A-Z]{1,3}$";
+        if (!Regex.IsMatch(platNomor.ToUpper(), validPattern))
+        {
+            Console.WriteLine("Format plat nomor tidak valid! Contoh yang benar: B 1234 XYZ");
+            return;
+        }
+
+
+        // Memformat plat nomor
+        platNomor = FormatPlatNomor(platNomor);
 
         var kendaraan = new
         {
@@ -97,12 +134,22 @@ public static class Menu
         var jsonContent = JsonSerializer.Serialize(kendaraan);
         var content = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
 
-        var response = await client.PostAsync($"{apiBaseUrl}/addKendaraan", content);
+        try
+        {
+            var response = await client.PostAsync($"{apiBaseUrl}/addKendaraan", content);
 
-     
+            if (response.IsSuccessStatusCode)
+                Console.WriteLine("Kendaraan berhasil ditambahkan.");
+            else
+                Console.WriteLine($"Gagal menambahkan kendaraan. Status: {response.StatusCode}");
+        }
+        catch (HttpRequestException ex)
+        {
+            Console.WriteLine("Terjadi kesalahan jaringan: " + ex.Message);
+        }
     }
 
-    // Method untuk mengupdate kendaraan
+
     private static async Task UpdateKendaraan()
     {
         Console.WriteLine("Masukkan Plat Nomor Kendaraan yang ingin diupdate: ");
@@ -114,26 +161,55 @@ public static class Menu
         Console.WriteLine("Masukkan Plat Nomor Baru: ");
         string platNomorBaru = Console.ReadLine();
 
+        // Validasi plat nomor baru
+        string pattern = @"^[A-Z]{1,2}[0-9]{1,4}[A-Z]{1,3}$";
+        if (!Regex.IsMatch(platNomorBaru.ToUpper(), pattern))
+        {
+            Console.WriteLine("Format plat nomor tidak valid! Contoh yang benar: AB123CD");
+            return;
+        }
+
         var updatedKendaraan = new
         {
             Merek = merek,
-            PlatNomor = platNomorBaru
+            PlatNomor = platNomorBaru.ToUpper()
         };
 
         var jsonContent = JsonSerializer.Serialize(updatedKendaraan);
         var content = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
 
-        var response = await client.PutAsync($"{apiBaseUrl}/updateKendaraan/{platNomor}", content);
+        try
+        {
+            var response = await client.PutAsync($"{apiBaseUrl}/updateKendaraan/{platNomor}", content);
 
+            if (response.IsSuccessStatusCode)
+                Console.WriteLine("Kendaraan berhasil diupdate.");
+            else
+                Console.WriteLine($"Gagal mengupdate kendaraan. Status: {response.StatusCode}");
+        }
+        catch (HttpRequestException ex)
+        {
+            Console.WriteLine("Terjadi kesalahan jaringan: " + ex.Message);
+        }
     }
 
-    // Method untuk menghapus kendaraan
     private static async Task DeleteKendaraan()
     {
         Console.Write("Masukkan Plat Nomor Kendaraan yang ingin dihapus: ");
         string platNomor = Console.ReadLine();
 
-        var response = await client.DeleteAsync($"{apiBaseUrl}/deleteKendaraan/{platNomor}");
+        try
+        {
+            var response = await client.DeleteAsync($"{apiBaseUrl}/deleteKendaraan/{platNomor}");
 
+            if (response.IsSuccessStatusCode)
+                Console.WriteLine("Kendaraan berhasil dihapus.");
+            else
+                Console.WriteLine($"Gagal menghapus kendaraan. Status: {response.StatusCode}");
+        }
+        catch (HttpRequestException ex)
+        {
+            Console.WriteLine("Terjadi kesalahan jaringan: " + ex.Message);
+        }
     }
 }
