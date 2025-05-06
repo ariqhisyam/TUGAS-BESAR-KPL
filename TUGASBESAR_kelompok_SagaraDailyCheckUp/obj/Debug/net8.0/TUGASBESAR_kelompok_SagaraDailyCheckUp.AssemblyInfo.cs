@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TUGASBESAR_kelompok_SagaraDailyCheckUp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7389a00e413088e9cc04afb792f67fe2feb1850")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccf7e170c02dc4ae31a4ef4595fb1880a4b64b7f")]
 [assembly: System.Reflection.AssemblyProductAttribute("TUGASBESAR_kelompok_SagaraDailyCheckUp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TUGASBESAR_kelompok_SagaraDailyCheckUp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
