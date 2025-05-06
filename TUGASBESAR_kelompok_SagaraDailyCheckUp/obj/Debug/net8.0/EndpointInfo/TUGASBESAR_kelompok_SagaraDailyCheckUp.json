@@ -344,6 +344,18 @@
           }
         }
       }
+    },
+    "/api/Admin/getTanggalHariIni": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -351,13 +363,33 @@
       "Kendaraan": {
         "type": "object",
         "properties": {
-          "merek": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "nama": {
             "type": "string",
             "nullable": true
           },
           "platNomor": {
             "type": "string",
             "nullable": true
+          },
+          "isReady": {
+            "type": "boolean"
+          },
+          "merek": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
           }
         },
         "additionalProperties": false

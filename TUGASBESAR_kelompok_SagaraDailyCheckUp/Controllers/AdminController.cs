@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using TUGASBESAR_kelompok_SagaraDailyCheckUp.Helpers;
 using TUGASBESAR_kelompok_SagaraDailyCheckUp.Model;
 
 namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers
@@ -173,6 +174,13 @@ namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers
                 return NoContent();
             }
             return NotFound("Key tidak ditemukan!");
+        }
+
+        [HttpGet("getTanggalHariIni")]
+        public IActionResult GetTanggalHariIni()
+        {
+            string tanggal = DateHelper.FormatIndo(DateTime.Now);
+            return Ok($"Hari ini: {tanggal}");
         }
     }
 }

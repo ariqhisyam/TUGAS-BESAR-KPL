@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\DATA\\kuliah\\Semester4\\kpl\\praktikum_kpl\\Modul11\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj": {}
+    "C:\\perkuliahan\\KPL\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj": {}
   },
   "projects": {
-    "E:\\DATA\\kuliah\\Semester4\\kpl\\praktikum_kpl\\Modul11\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj": {
+    "C:\\perkuliahan\\KPL\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DATA\\kuliah\\Semester4\\kpl\\praktikum_kpl\\Modul11\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj",
+        "projectUniqueName": "C:\\perkuliahan\\KPL\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj",
         "projectName": "TUGASBESAR_kelompok_SagaraDailyCheckUp",
-        "projectPath": "E:\\DATA\\kuliah\\Semester4\\kpl\\praktikum_kpl\\Modul11\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj",
-        "packagesPath": "C:\\Users\\relinggaa\\.nuget\\packages\\",
-        "outputPath": "E:\\DATA\\kuliah\\Semester4\\kpl\\praktikum_kpl\\Modul11\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\obj\\",
+        "projectPath": "C:\\perkuliahan\\KPL\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj",
+        "packagesPath": "C:\\Users\\MSI CYBORG\\.nuget\\packages\\",
+        "outputPath": "C:\\perkuliahan\\KPL\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\relinggaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MSI CYBORG\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -74,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
