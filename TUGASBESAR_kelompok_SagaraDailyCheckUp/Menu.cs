@@ -3,37 +3,41 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using System.IO;
 
 public static class Menu
 {
     private static readonly HttpClient client = new HttpClient();
     private const string apiBaseUrl = "https://localhost:7119/api/Admin";
 
-    // table driven
-    private static readonly Dictionary<string, Func<Task>> menuActions = new Dictionary<string, Func<Task>>()
+    private static Dictionary<string, Func<Task>> menuActions = new();
+    private static Dictionary<string, string> menuLabels = new();
+    private static readonly Dictionary<string, Func<Task>> methodMap = new()
     {
-        { "1", CreateKey },
-        { "2", AddKendaraan },
-        { "3", UpdateKendaraan },
-        { "4", DeleteKendaraan }
+        { "CreateKey", CreateKey },
+        { "AddKendaraan", AddKendaraan },
+        { "UpdateKendaraan", UpdateKendaraan },
+        { "DeleteKendaraan", DeleteKendaraan }
     };
 
     public static async Task ShowMenu()
     {
+        await LoadMenuFromJson("menu.json");
+
         string inputUser;
         do
         {
             Console.Clear();
-            Console.WriteLine("PILIH MENU:");
-            Console.WriteLine("1. Buat Key");
-            Console.WriteLine("2. Tambah Data Kendaraan");
-            Console.WriteLine("3. Update Kendaraan");
-            Console.WriteLine("4. Hapus Kendaraan");
-            Console.WriteLine("5. Keluar");
-            Console.Write("Pilih menu (1-5): ");
+            Console.WriteLine("=== PILIH MENU ===");
+            foreach (var item in menuLabels)
+            {
+                Console.WriteLine($"{item.Key}. {FormatMenuLabel(item.Value)}");
+            }
+            Console.WriteLine("0. Keluar");
+            Console.Write("Pilih menu: ");
             inputUser = Console.ReadLine();
 
-            if (inputUser == "5")
+            if (inputUser == "0")
             {
                 Console.WriteLine("Keluar...");
                 break;
@@ -50,7 +54,41 @@ public static class Menu
 
             Console.WriteLine("Tekan tombol apapun untuk melanjutkan...");
             Console.ReadKey();
-        } while (inputUser != "5");
+        } while (true);
+    }
+
+    public static async Task LoadMenuFromJson(string path)
+    {
+        try
+        {
+            var json = await File.ReadAllTextAsync(path);
+            var rawMenu = JsonSerializer.Deserialize<Dictionary<string, string>>(json);
+
+            foreach (var item in rawMenu)
+            {
+                if (methodMap.TryGetValue(item.Value, out var method))
+                {
+                    menuActions[item.Key] = method;
+                    menuLabels[item.Key] = item.Value;
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Gagal memuat menu dari JSON: " + ex.Message);
+        }
+    }
+
+    private static string FormatMenuLabel(string key)
+    {
+        return key switch
+        {
+            "CreateKey" => "Buat Key",
+            "AddKendaraan" => "Tambah Kendaraan",
+            "UpdateKendaraan" => "Update Kendaraan",
+            "DeleteKendaraan" => "Hapus Kendaraan",
+            _ => key
+        };
     }
 
     private static async Task CreateKey()
@@ -64,22 +102,23 @@ public static class Menu
         Console.WriteLine("Masukkan Key Value: ");
         string keyValue = Console.ReadLine();
 
-        var key = new
-        {
-            Username = username,
-            Role = role,
-            KeyValue = keyValue
-        };
-
+        var key = new { Username = username, Role = role, KeyValue = keyValue };
         var jsonContent = JsonSerializer.Serialize(key);
         var content = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
 
-        var response = await client.PostAsync($"{apiBaseUrl}/addKey", content);
-
-  
+        try
+        {
+            var response = await client.PostAsync($"{apiBaseUrl}/addKey", content);
+            Console.WriteLine(response.IsSuccessStatusCode
+                ? "Key berhasil dibuat."
+                : $"Gagal membuat key. Status: {response.StatusCode}");
+        }
+        catch (HttpRequestException ex)
+        {
+            Console.WriteLine("Terjadi kesalahan jaringan: " + ex.Message);
+        }
     }
 
-    // Method untuk menambahkan kendaraan
     private static async Task AddKendaraan()
     {
         Console.WriteLine("Masukkan Merek Kendaraan: ");
@@ -88,21 +127,22 @@ public static class Menu
         Console.WriteLine("Masukkan Plat Nomor: ");
         string platNomor = Console.ReadLine();
 
-        var kendaraan = new
+        var kendaraan = new { Merek = merek, PlatNomor = platNomor };
+        var content = new StringContent(JsonSerializer.Serialize(kendaraan), System.Text.Encoding.UTF8, "application/json");
+
+        try
         {
-            Merek = merek,
-            PlatNomor = platNomor
-        };
-
-        var jsonContent = JsonSerializer.Serialize(kendaraan);
-        var content = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
-
-        var response = await client.PostAsync($"{apiBaseUrl}/addKendaraan", content);
-
-     
+            var response = await client.PostAsync($"{apiBaseUrl}/addKendaraan", content);
+            Console.WriteLine(response.IsSuccessStatusCode
+                ? "Kendaraan berhasil ditambahkan."
+                : $"Gagal menambahkan kendaraan. Status: {response.StatusCode}");
+        }
+        catch (HttpRequestException ex)
+        {
+            Console.WriteLine("Terjadi kesalahan jaringan: " + ex.Message);
+        }
     }
 
-    // Method untuk mengupdate kendaraan
     private static async Task UpdateKendaraan()
     {
         Console.WriteLine("Masukkan Plat Nomor Kendaraan yang ingin diupdate: ");
@@ -114,26 +154,37 @@ public static class Menu
         Console.WriteLine("Masukkan Plat Nomor Baru: ");
         string platNomorBaru = Console.ReadLine();
 
-        var updatedKendaraan = new
+        var updatedKendaraan = new { Merek = merek, PlatNomor = platNomorBaru };
+        var content = new StringContent(JsonSerializer.Serialize(updatedKendaraan), System.Text.Encoding.UTF8, "application/json");
+
+        try
         {
-            Merek = merek,
-            PlatNomor = platNomorBaru
-        };
-
-        var jsonContent = JsonSerializer.Serialize(updatedKendaraan);
-        var content = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
-
-        var response = await client.PutAsync($"{apiBaseUrl}/updateKendaraan/{platNomor}", content);
-
+            var response = await client.PutAsync($"{apiBaseUrl}/updateKendaraan/{platNomor}", content);
+            Console.WriteLine(response.IsSuccessStatusCode
+                ? "Kendaraan berhasil diupdate."
+                : $"Gagal mengupdate kendaraan. Status: {response.StatusCode}");
+        }
+        catch (HttpRequestException ex)
+        {
+            Console.WriteLine("Terjadi kesalahan jaringan: " + ex.Message);
+        }
     }
 
-    // Method untuk menghapus kendaraan
     private static async Task DeleteKendaraan()
     {
         Console.Write("Masukkan Plat Nomor Kendaraan yang ingin dihapus: ");
         string platNomor = Console.ReadLine();
 
-        var response = await client.DeleteAsync($"{apiBaseUrl}/deleteKendaraan/{platNomor}");
-
+        try
+        {
+            var response = await client.DeleteAsync($"{apiBaseUrl}/deleteKendaraan/{platNomor}");
+            Console.WriteLine(response.IsSuccessStatusCode
+                ? "Kendaraan berhasil dihapus."
+                : $"Gagal menghapus kendaraan. Status: {response.StatusCode}");
+        }
+        catch (HttpRequestException ex)
+        {
+            Console.WriteLine("Terjadi kesalahan jaringan: " + ex.Message);
+        }
     }
 }
