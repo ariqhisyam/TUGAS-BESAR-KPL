@@ -101,6 +101,16 @@
   },
   {
     "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
+    "Method": "GetTanggalHariIni",
+    "RelativePath": "api/Admin/getTanggalHariIni",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
     "Method": "UpdateKendaraan",
     "RelativePath": "api/Admin/updateKendaraan/{platNomor}",
     "HttpMethod": "PUT",

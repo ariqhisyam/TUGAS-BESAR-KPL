@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using TUGASBESAR_kelompok_SagaraDailyCheckUp.Helpers;
 using TUGASBESAR_kelompok_SagaraDailyCheckUp.Model;
 
 namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers
@@ -129,26 +130,11 @@ namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers
             return NotFound("Key tidak ditemukan!");
         }
 
-        //[HttpPut("setStatusKendaraan/{platNomor}")]
-        //public IActionResult SetStatusKendaraan(string platNomor)
-        //{
-        //    var kendaraan = kendaraanList.FirstOrDefault(k => k.PlatNomor == platNomor);
-        //    if (kendaraan == null)
-        //        return NotFound("Kendaraan tidak ditemukan!");
-
-        //    // Count the number of damages for the vehicle
-        //    int kerusakanCount = kerusakanList.Count(k => k.PlatNomor == platNomor);
-
-        //    // Set the status based on the number of damages
-        //    if (kerusakanCount < 3)
-        //        kendaraan.Status = "Low";
-        //    else if (kerusakanCount <= 5)
-        //        kendaraan.Status = "Medium";
-        //    else
-        //        kendaraan.Status = "Fatal";
-
-        //    return Ok($"Status kendaraan dengan plat nomor {platNomor} berhasil diperbarui menjadi {kendaraan.Status}.");
-        //}
-
+        [HttpGet("getTanggalHariIni")]
+        public IActionResult GetTanggalHariIni()
+        {
+            string tanggal = DateHelper.FormatIndo(DateTime.Now);
+            return Ok($"Hari ini: {tanggal}");
+        }
     }
 }
