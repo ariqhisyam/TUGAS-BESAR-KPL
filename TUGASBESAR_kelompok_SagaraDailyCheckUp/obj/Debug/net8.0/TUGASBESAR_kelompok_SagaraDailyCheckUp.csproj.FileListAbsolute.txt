@@ -35,40 +35,41 @@ E:\DATA\kuliah\Semester4\kpl\praktikum_kpl\Modul11\TUGASBESAR_kelompok_SagaraDai
 E:\DATA\kuliah\Semester4\kpl\praktikum_kpl\Modul11\TUGASBESAR_kelompok_SagaraDailyCheckUp\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.pdb
 E:\DATA\kuliah\Semester4\kpl\praktikum_kpl\Modul11\TUGASBESAR_kelompok_SagaraDailyCheckUp\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.genruntimeconfig.cache
 E:\DATA\kuliah\Semester4\kpl\praktikum_kpl\Modul11\TUGASBESAR_kelompok_SagaraDailyCheckUp\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\ref\TUGASBESAR_kelompok_SagaraDailyCheckUp.dll
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\appsettings.Development.json
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\appsettings.json
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.staticwebassets.endpoints.json
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.exe
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.deps.json
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.runtimeconfig.json
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.dll
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.pdb
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\Microsoft.OpenApi.dll
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj.AssemblyReference.cache
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.GeneratedMSBuildEditorConfig.editorconfig
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.AssemblyInfoInputs.cache
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.AssemblyInfo.cs
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj.CoreCompileInputs.cache
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.MvcApplicationPartsAssemblyInfo.cs
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.MvcApplicationPartsAssemblyInfo.cache
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.sourcelink.json
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\scopedcss\bundle\TUGASBESAR_kelompok_SagaraDailyCheckUp.styles.css
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\staticwebassets.build.json
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\staticwebassets.development.json
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\staticwebassets\msbuild.TUGASBESAR_kelompok_SagaraDailyCheckUp.Microsoft.AspNetCore.StaticWebAssets.props
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\staticwebassets\msbuild.TUGASBESAR_kelompok_SagaraDailyCheckUp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\staticwebassets\msbuild.build.TUGASBESAR_kelompok_SagaraDailyCheckUp.props
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.TUGASBESAR_kelompok_SagaraDailyCheckUp.props
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.TUGASBESAR_kelompok_SagaraDailyCheckUp.props
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\staticwebassets.pack.json
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBES.34F90989.Up2Date
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.dll
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\refint\TUGASBESAR_kelompok_SagaraDailyCheckUp.dll
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.pdb
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.genruntimeconfig.cache
-E:\A. KPL 2025\TUBES KPL\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\ref\TUGASBESAR_kelompok_SagaraDailyCheckUp.dll
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.staticwebassets.endpoints.json
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.exe
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.deps.json
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.runtimeconfig.json
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.dll
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.pdb
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj.AssemblyReference.cache
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.AssemblyInfoInputs.cache
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.AssemblyInfo.cs
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj.CoreCompileInputs.cache
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.sourcelink.json
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\scopedcss\bundle\TUGASBESAR_kelompok_SagaraDailyCheckUp.styles.css
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\staticwebassets\msbuild.TUGASBESAR_kelompok_SagaraDailyCheckUp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\staticwebassets\msbuild.TUGASBESAR_kelompok_SagaraDailyCheckUp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\staticwebassets\msbuild.build.TUGASBESAR_kelompok_SagaraDailyCheckUp.props
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.TUGASBESAR_kelompok_SagaraDailyCheckUp.props
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.TUGASBESAR_kelompok_SagaraDailyCheckUp.props
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBES.34F90989.Up2Date
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.dll
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\refint\TUGASBESAR_kelompok_SagaraDailyCheckUp.dll
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.pdb
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\TUGASBESAR_kelompok_SagaraDailyCheckUp.genruntimeconfig.cache
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\obj\Debug\net8.0\ref\TUGASBESAR_kelompok_SagaraDailyCheckUp.dll
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\menu.json
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\Model\appsettings.Development.json
+C:\Users\sicantik\Source\Repos\TUGAS-BESAR-KPL\TUGASBESAR_kelompok_SagaraDailyCheckUp\bin\Debug\net8.0\Model\appsettings.json

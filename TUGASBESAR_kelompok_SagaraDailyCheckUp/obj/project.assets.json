@@ -447,23 +447,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MSI CYBORG\\.nuget\\packages\\": {},
+    "C:\\Users\\sicantik\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj",
+      "projectUniqueName": "C:\\Users\\sicantik\\Source\\Repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj",
       "projectName": "TUGASBESAR_kelompok_SagaraDailyCheckUp",
-      "projectPath": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj",
-      "packagesPath": "C:\\Users\\MSI CYBORG\\.nuget\\packages\\",
-      "outputPath": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\obj\\",
+      "projectPath": "C:\\Users\\sicantik\\Source\\Repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj",
+      "packagesPath": "C:\\Users\\sicantik\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sicantik\\Source\\Repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\MSI CYBORG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sicantik\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

@@ -10,10 +10,6 @@ namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers
     [Route("api/[controller]")]
     public class AdminController : ControllerBase
     {
-   
-      
-
-   
         private static List<Kendaraan> kendaraanList = new List<Kendaraan>
         {
             new Kendaraan { Merek = "Toyota", PlatNomor = "AB123CD" },

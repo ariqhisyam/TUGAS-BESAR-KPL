@@ -1,18 +1,27 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 using System.Threading.Tasks;
-using TUGASBESAR_kelompok_SagaraDailyCheckUp;
+using TUGASBESAR_kelompok_SagaraDailyCheckUp.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Menambahkan controller dan layanan lainnya
+// Ambil konfigurasi dari appsettings.json
+var config = builder.Configuration;
+string appName = config["AppSettings:AppName"];
+string version = config["AppSettings:Version"];
+bool.TryParse(config["AppSettings:DebugMode"], out bool debugMode);
+
+Console.WriteLine($"Nama Aplikasi: {appName}, Versi: {version}, Debug: {debugMode}");
+
+// Tambahkan layanan
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
 
 var app = builder.Build();
 
-// Mengonfigurasi pipeline API
+// Konfigurasi pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -23,12 +32,11 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
-// Menjalankan API di background
-var apiTask = Task.Run(() => app.Run());
+// 🔥 Jalankan Web API sebagai background task
+var apiTask = Task.Run(() => app.RunAsync());
 
-// Menampilkan menu
-PilihMenu.PilihMenu1();
+// 🔥 Jalankan CLI Menu setelah API dimulai
+await Menu.ShowMenu();
 
-
-// Menunggu hingga API selesai
+// Tunggu API task selesai jika user menutup menu CLI
 await apiTask;

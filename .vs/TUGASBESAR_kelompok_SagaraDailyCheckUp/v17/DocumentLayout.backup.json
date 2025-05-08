@@ -1,72 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\",
+  "WorkspaceRootPath": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\perkuliahan\\kpl\\clone kesekian kali\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\controllers\\drivercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|solutionrelative:tugasbesar_kelompok_sagaradailycheckup\\controllers\\drivercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\users\\sicantik\\source\\repos\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\menu.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|solutionrelative:tugasbesar_kelompok_sagaradailycheckup\\menu.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-=======
-      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\perkuliahan\\kpl\\clone kesekian kali\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|solutionrelative:tugasbesar_kelompok_sagaradailycheckup\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\perkuliahan\\kpl\\clone kesekian kali\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\users\\sicantik\\source\\repos\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|solutionrelative:tugasbesar_kelompok_sagaradailycheckup\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\users\\sicantik\\source\\repos\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|solutionrelative:tugasbesar_kelompok_sagaradailycheckup\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\users\\sicantik\\source\\repos\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\model\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|solutionrelative:tugasbesar_kelompok_sagaradailycheckup\\model\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\Users\\sicantik\\Source\\Repos\\TUGAS-BESAR-KPL\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|solutionrelative:Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\perkuliahan\\kpl\\clone kesekian kali\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\model\\kendaraan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|solutionrelative:tugasbesar_kelompok_sagaradailycheckup\\model\\kendaraan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
->>>>>>> AdeFathiaNuraini
-      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\perkuliahan\\kpl\\clone kesekian kali\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\users\\sicantik\\source\\repos\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|solutionrelative:tugasbesar_kelompok_sagaradailycheckup\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\perkuliahan\\kpl\\clone kesekian kali\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\menudriver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|solutionrelative:tugasbesar_kelompok_sagaradailycheckup\\menudriver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\users\\sicantik\\source\\repos\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\model\\appsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|solutionrelative:tugasbesar_kelompok_sagaradailycheckup\\model\\appsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\perkuliahan\\kpl\\clone kesekian kali\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\pilihmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|solutionrelative:tugasbesar_kelompok_sagaradailycheckup\\pilihmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\users\\sicantik\\source\\repos\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\tugasbesar_kelompok_sagaradailycheckup.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|solutionrelative:tugasbesar_kelompok_sagaradailycheckup\\tugasbesar_kelompok_sagaradailycheckup.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\perkuliahan\\kpl\\clone kesekian kali\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|solutionrelative:tugasbesar_kelompok_sagaradailycheckup\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\perkuliahan\\kpl\\clone kesekian kali\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\model\\kendaraan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\users\\sicantik\\source\\repos\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\model\\kendaraan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|solutionrelative:tugasbesar_kelompok_sagaradailycheckup\\model\\kendaraan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\perkuliahan\\kpl\\clone kesekian kali\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|solutionrelative:tugasbesar_kelompok_sagaradailycheckup\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\perkuliahan\\kpl\\clone kesekian kali\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\model\\driver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|solutionrelative:tugasbesar_kelompok_sagaradailycheckup\\model\\driver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-=======
-      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\perkuliahan\\kpl\\clone kesekian kali\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\model\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|solutionrelative:tugasbesar_kelompok_sagaradailycheckup\\model\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
->>>>>>> AdeFathiaNuraini
-      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\perkuliahan\\kpl\\clone kesekian kali\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\model\\kerusakan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\users\\sicantik\\source\\repos\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\model\\kerusakan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|solutionrelative:tugasbesar_kelompok_sagaradailycheckup\\model\\kerusakan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\perkuliahan\\kpl\\clone kesekian kali\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\model\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|c:\\users\\sicantik\\source\\repos\\tugas-besar-kpl\\tugasbesar_kelompok_sagaradailycheckup\\model\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D80ADDD-8458-495B-A8F4-F6F7CB240FFD}|TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj|solutionrelative:tugasbesar_kelompok_sagaradailycheckup\\model\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -87,73 +64,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
 <<<<<<< HEAD
               "DocumentIndex": 0,
-              "Title": "DriverController.cs",
-              "DocumentMoniker": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Controllers\\DriverController.cs",
-              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Controllers\\DriverController.cs",
-              "ToolTip": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Controllers\\DriverController.cs",
-              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Controllers\\DriverController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAA+AAAAAAAAAA==",
-=======
-              "DocumentIndex": 7,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Properties\\launchSettings.json",
-              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Title": "menu.json",
+              "DocumentMoniker": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\menu.json",
+              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\menu.json",
+              "ToolTip": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\menu.json",
+              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\menu.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-05T14:48:03.127Z"
+              "WhenOpened": "2025-05-06T11:44:19.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppSetting.cs",
+              "DocumentMoniker": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\AppSetting.cs",
+              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\AppSetting.cs",
+              "ToolTip": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\AppSetting.cs",
+              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\AppSetting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T15:18:25.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TUGASBESAR_kelompok_SagaraDailyCheckUp.http",
+              "DocumentMoniker": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.http",
+              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.http",
+              "ToolTip": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.http",
+              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-05-05T15:17:20.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\appsettings.json",
+              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\appsettings.json",
+              "ToolTip": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\appsettings.json",
+              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-05T14:18:57.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\Menu.cs",
+              "RelativeDocumentMoniker": "Menu.cs",
+              "ToolTip": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\Menu.cs",
+              "RelativeToolTip": "Menu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T13:33:17.232Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\Menu.cs",
-              "RelativeDocumentMoniker": "Menu.cs",
-              "ToolTip": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\Menu.cs",
-              "RelativeToolTip": "Menu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T14:47:02.44Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Menu.cs",
+              "DocumentMoniker": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Menu.cs",
               "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Menu.cs",
-              "ToolTip": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Menu.cs",
+              "ToolTip": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Menu.cs",
               "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Menu.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAADwv0kAAAAAAAAAAAAAAA==",
->>>>>>> AdeFathiaNuraini
+              "ViewState": "AgIAAJIAAAAAAAAAAAAswKgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T16:44:14.886Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T12:35:10.72Z"
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Program.cs",
-              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Program.cs",
-              "ToolTip": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Program.cs",
-              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T16:44:14.916Z"
-=======
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Key.cs",
-              "DocumentMoniker": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Key.cs",
+              "DocumentMoniker": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Key.cs",
               "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Key.cs",
-              "ToolTip": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Key.cs",
+              "ToolTip": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Key.cs",
               "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Key.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -161,169 +162,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Program.cs",
+              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Program.cs",
+              "ToolTip": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Program.cs",
+              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T10:11:50.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Kerusakan.cs",
-              "DocumentMoniker": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kerusakan.cs",
+              "DocumentMoniker": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kerusakan.cs",
               "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kerusakan.cs",
-              "ToolTip": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kerusakan.cs",
+              "ToolTip": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kerusakan.cs",
               "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kerusakan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T11:21:28.812Z"
 >>>>>>> AdeFathiaNuraini
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-<<<<<<< HEAD
-              "Title": "PilihMenu.cs",
-              "DocumentMoniker": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\PilihMenu.cs",
-              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\PilihMenu.cs",
-              "ToolTip": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\PilihMenu.cs",
-              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\PilihMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T16:44:14.764Z"
-=======
+              "DocumentIndex": 8,
               "Title": "Kendaraan.cs",
-              "DocumentMoniker": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kendaraan.cs",
+              "DocumentMoniker": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kendaraan.cs",
               "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kendaraan.cs",
-              "ToolTip": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kendaraan.cs",
+              "ToolTip": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kendaraan.cs",
               "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kendaraan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T11:21:19.283Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Controllers\\AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\sicantik\\source\\repos\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Controllers\\AdminController.cs",
               "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T10:17:59.116Z"
->>>>>>> AdeFathiaNuraini
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-<<<<<<< HEAD
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJcAAAAtAAAAAAAAAA==",
-=======
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Program.cs",
-              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Program.cs",
-              "ToolTip": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Program.cs",
-              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
->>>>>>> AdeFathiaNuraini
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T16:44:14.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MenuDriver.cs",
-              "DocumentMoniker": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\MenuDriver.cs",
-              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\MenuDriver.cs",
-              "ToolTip": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\MenuDriver.cs",
-              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\MenuDriver.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAA8wEYAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T16:44:14.882Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Properties\\launchSettings.json",
-              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-08T16:44:14.898Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\appsettings.json",
-              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\appsettings.json",
-              "ToolTip": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\appsettings.json",
-              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-08T16:44:14.893Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Driver.cs",
-              "DocumentMoniker": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Driver.cs",
-              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Driver.cs",
-              "ToolTip": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Driver.cs",
-              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Driver.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T16:44:14.889Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Menu.cs",
-              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Menu.cs",
-              "ToolTip": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Menu.cs",
-              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Menu.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAQwDsAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T16:44:14.901Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Key.cs",
-              "DocumentMoniker": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Key.cs",
-              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Key.cs",
-              "ToolTip": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Key.cs",
-              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Key.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T16:44:14.904Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Kerusakan.cs",
-              "DocumentMoniker": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kerusakan.cs",
-              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kerusakan.cs",
-              "ToolTip": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kerusakan.cs",
-              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kerusakan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T16:44:14.908Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Kendaraan.cs",
-              "DocumentMoniker": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kendaraan.cs",
-              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kendaraan.cs",
-              "ToolTip": "C:\\perkuliahan\\KPL\\clone kesekian kali\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kendaraan.cs",
-              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kendaraan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T16:44:14.911Z"
             }
           ]
         }
