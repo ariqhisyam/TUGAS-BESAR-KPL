@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TUGASBESAR_kelompok_SagaraDailyCheckUp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2b39ce800b3981bcab295a8ae75c82325e78c96")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b18ade93f698b3a9d15c70f8c00cfec8274d41e")]
->>>>>>> AdeFathiaNuraini
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+680806d60d4f7bfa970613483766b3f076d2de6e")]
 [assembly: System.Reflection.AssemblyProductAttribute("TUGASBESAR_kelompok_SagaraDailyCheckUp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TUGASBESAR_kelompok_SagaraDailyCheckUp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
