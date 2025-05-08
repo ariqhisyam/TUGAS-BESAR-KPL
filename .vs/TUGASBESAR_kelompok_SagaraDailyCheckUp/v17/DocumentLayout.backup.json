@@ -70,7 +70,60 @@
               "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Controllers\\DriverController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2025-05-08T16:44:14.886Z"
+=======
+              "WhenOpened": "2025-05-05T14:47:02.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "E:\\FATHIA DOC SEMESTER 4\\KONSTRUKSI PERANGKAT LUNAK\\PRAKTIKUM\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Menu.cs",
+              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Menu.cs",
+              "ToolTip": "E:\\FATHIA DOC SEMESTER 4\\KONSTRUKSI PERANGKAT LUNAK\\PRAKTIKUM\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Menu.cs",
+              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Menu.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAADwv0kAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T12:35:10.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Key.cs",
+              "DocumentMoniker": "E:\\FATHIA DOC SEMESTER 4\\KONSTRUKSI PERANGKAT LUNAK\\PRAKTIKUM\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Key.cs",
+              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Key.cs",
+              "ToolTip": "E:\\FATHIA DOC SEMESTER 4\\KONSTRUKSI PERANGKAT LUNAK\\PRAKTIKUM\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Key.cs",
+              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Key.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:21:35.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Kerusakan.cs",
+              "DocumentMoniker": "E:\\FATHIA DOC SEMESTER 4\\KONSTRUKSI PERANGKAT LUNAK\\PRAKTIKUM\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kerusakan.cs",
+              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kerusakan.cs",
+              "ToolTip": "E:\\FATHIA DOC SEMESTER 4\\KONSTRUKSI PERANGKAT LUNAK\\PRAKTIKUM\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kerusakan.cs",
+              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kerusakan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:21:28.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Kendaraan.cs",
+              "DocumentMoniker": "E:\\FATHIA DOC SEMESTER 4\\KONSTRUKSI PERANGKAT LUNAK\\PRAKTIKUM\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kendaraan.cs",
+              "RelativeDocumentMoniker": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kendaraan.cs",
+              "ToolTip": "E:\\FATHIA DOC SEMESTER 4\\KONSTRUKSI PERANGKAT LUNAK\\PRAKTIKUM\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kendaraan.cs",
+              "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\Model\\Kendaraan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T11:21:19.283Z"
+>>>>>>> AdeFathiaNuraini
             },
             {
               "$type": "Document",
@@ -119,6 +172,7 @@
               "RelativeToolTip": "TUGASBESAR_kelompok_SagaraDailyCheckUp\\MenuDriver.cs",
               "ViewState": "AgIAAFQAAAAAAAAAAAA8wEYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
               "WhenOpened": "2025-05-08T16:44:14.882Z",
               "EditorCaption": ""
             },
@@ -205,6 +259,9 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T16:44:14.911Z"
+=======
+              "WhenOpened": "2025-05-05T10:11:50.803Z"
+>>>>>>> AdeFathiaNuraini
             }
           ]
         }
