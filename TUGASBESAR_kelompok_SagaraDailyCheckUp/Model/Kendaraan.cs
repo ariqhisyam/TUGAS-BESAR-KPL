@@ -5,6 +5,8 @@
     {
         public string Merek { get; set; }
         public string PlatNomor { get; set; }
+
+        public string Status { get; set; }
     
     }
 }

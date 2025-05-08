@@ -447,23 +447,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\adfth\\.nuget\\packages\\": {},
+    "C:\\Users\\Ariq Hisyam\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\FATHIA DOC SEMESTER 4\\KONSTRUKSI PERANGKAT LUNAK\\PRAKTIKUM\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj",
+      "projectUniqueName": "E:\\A. KPL 2025\\TUBES KPL\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj",
       "projectName": "TUGASBESAR_kelompok_SagaraDailyCheckUp",
-      "projectPath": "E:\\FATHIA DOC SEMESTER 4\\KONSTRUKSI PERANGKAT LUNAK\\PRAKTIKUM\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj",
-      "packagesPath": "C:\\Users\\adfth\\.nuget\\packages\\",
-      "outputPath": "E:\\FATHIA DOC SEMESTER 4\\KONSTRUKSI PERANGKAT LUNAK\\PRAKTIKUM\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\obj\\",
+      "projectPath": "E:\\A. KPL 2025\\TUBES KPL\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\TUGASBESAR_kelompok_SagaraDailyCheckUp.csproj",
+      "packagesPath": "C:\\Users\\Ariq Hisyam\\.nuget\\packages\\",
+      "outputPath": "E:\\A. KPL 2025\\TUBES KPL\\TUGAS-BESAR-KPL\\TUGASBESAR_kelompok_SagaraDailyCheckUp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\adfth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ariq Hisyam\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
