@@ -39,9 +39,6 @@ namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers
             return list;
         }
 
-        // Runtime configuration
-        private static string configFilePath = "path/to/config.txt"; 
-
         // API untuk mendapatkan semua kendaraan
         [HttpGet("getKendaraan")]
         public IActionResult GetKendaraan()
