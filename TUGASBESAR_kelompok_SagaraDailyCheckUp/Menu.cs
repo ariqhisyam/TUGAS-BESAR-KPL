@@ -3,6 +3,7 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 public static class Menu
 {
@@ -74,19 +75,56 @@ public static class Menu
         var jsonContent = JsonSerializer.Serialize(key);
         var content = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
 
-        var response = await client.PostAsync($"{apiBaseUrl}/addKey", content);
+        try
+        {
+            var response = await client.PostAsync($"{apiBaseUrl}/addKey", content);
 
-  
+            if (response.IsSuccessStatusCode)
+                Console.WriteLine("Key berhasil dibuat.");
+            else
+                Console.WriteLine($"Gagal membuat key. Status: {response.StatusCode}");
+        }
+        catch (HttpRequestException ex)
+        {
+            Console.WriteLine("Terjadi kesalahan jaringan: " + ex.Message);
+        }
     }
 
-    // Method untuk menambahkan kendaraan
+    // AUTOMATA ADE FATHIA NURAINI
+    private static string FormatPlatNomor(string platNomor)
+    {
+        // Menggunakan regex untuk memisahkan plat nomor berdasarkan pola yang umum
+        // Contoh pola: "B 1221 SJT"
+        var regex = new System.Text.RegularExpressions.Regex(@"([A-Z]+)(\d+)([A-Z]+)");
+        var match = regex.Match(platNomor);
+
+        if (match.Success)
+        {
+            return $"{match.Groups[1].Value} {match.Groups[2].Value} {match.Groups[3].Value}";
+        }
+
+        return platNomor; // Jika format tidak sesuai, mengembalikan plat nomor seperti aslinya
+    }
+
     private static async Task AddKendaraan()
     {
         Console.WriteLine("Masukkan Merek Kendaraan: ");
         string merek = Console.ReadLine();
 
-        Console.WriteLine("Masukkan Plat Nomor: ");
+        Console.WriteLine("Masukkan Plat Nomor (contoh: B 1221 SJT): "); // Bagian ini 
         string platNomor = Console.ReadLine();
+
+        // Validasi bahwa plat nomor harus memiliki format dengan spasi, contoh: B 1234 XYZ
+        string validPattern = @"^[A-Z]{1,2} [0-9]{1,4} [A-Z]{1,3}$";
+        if (!Regex.IsMatch(platNomor.ToUpper(), validPattern))
+        {
+            Console.WriteLine("Format plat nomor tidak valid! Contoh yang benar: B 1234 XYZ");
+            return;
+        }
+
+
+        // Memformat plat nomor
+        platNomor = FormatPlatNomor(platNomor);
 
         var kendaraan = new
         {
@@ -97,22 +135,62 @@ public static class Menu
         var jsonContent = JsonSerializer.Serialize(kendaraan);
         var content = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
 
-        var response = await client.PostAsync($"{apiBaseUrl}/addKendaraan", content);
+        try
+        {
+            var response = await client.PostAsync($"{apiBaseUrl}/addKendaraan", content);
 
-     
+            if (response.IsSuccessStatusCode)
+                Console.WriteLine("Kendaraan berhasil ditambahkan.");
+            else
+                Console.WriteLine($"Gagal menambahkan kendaraan. Status: {response.StatusCode}");
+        }
+        catch (HttpRequestException ex)
+        {
+            Console.WriteLine("Terjadi kesalahan jaringan: " + ex.Message);
+        }
     }
+    // sampai sini mengalami perubahan (ADE FATHIA NURAINI)
 
-    // Method untuk mengupdate kendaraan
+    // AUTOMATA ADE FATHIA NURAINI
     private static async Task UpdateKendaraan()
     {
-        Console.WriteLine("Masukkan Plat Nomor Kendaraan yang ingin diupdate: ");
-        string platNomor = Console.ReadLine();
+        Console.WriteLine("Masukkan Plat Nomor Kendaraan yang ingin diupdate (format: B 1234 XYZ): ");
+        string platNomor = Console.ReadLine().ToUpper();
+
+        // Format otomatis jika input rapat (B1234XYZ)
+        var regexFormat = new Regex(@"^([A-Z]{1,2})(\d{1,4})([A-Z]{1,3})$");
+        if (regexFormat.IsMatch(platNomor))
+        {
+            var match = regexFormat.Match(platNomor);
+            platNomor = $"{match.Groups[1].Value} {match.Groups[2].Value} {match.Groups[3].Value}";
+        }
+
+        // Validasi akhir
+        string patternValid = @"^[A-Z]{1,2} [0-9]{1,4} [A-Z]{1,3}$";
+        if (!Regex.IsMatch(platNomor, patternValid))
+        {
+            Console.WriteLine("Format plat nomor tidak valid! Contoh yang benar: B 1234 XYZ");
+            return;
+        }
 
         Console.WriteLine("Masukkan Merek Kendaraan Baru: ");
         string merek = Console.ReadLine();
 
-        Console.WriteLine("Masukkan Plat Nomor Baru: ");
-        string platNomorBaru = Console.ReadLine();
+        Console.WriteLine("Masukkan Plat Nomor Baru (format: B 1234 XYZ): ");
+        string platNomorBaru = Console.ReadLine().ToUpper();
+
+        // Format otomatis untuk input baru
+        if (regexFormat.IsMatch(platNomorBaru))
+        {
+            var match = regexFormat.Match(platNomorBaru);
+            platNomorBaru = $"{match.Groups[1].Value} {match.Groups[2].Value} {match.Groups[3].Value}";
+        }
+
+        if (!Regex.IsMatch(platNomorBaru, patternValid))
+        {
+            Console.WriteLine("Format plat nomor baru tidak valid! Contoh: B 1234 XYZ");
+            return;
+        }
 
         var updatedKendaraan = new
         {
@@ -123,17 +201,58 @@ public static class Menu
         var jsonContent = JsonSerializer.Serialize(updatedKendaraan);
         var content = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
 
-        var response = await client.PutAsync($"{apiBaseUrl}/updateKendaraan/{platNomor}", content);
+        try
+        {
+            var response = await client.PutAsync($"{apiBaseUrl}/updateKendaraan/{platNomor}", content);
 
+            if (response.IsSuccessStatusCode)
+                Console.WriteLine("Kendaraan berhasil diupdate.");
+            else
+                Console.WriteLine($"Gagal mengupdate kendaraan. Status: {response.StatusCode}");
+        }
+        catch (HttpRequestException ex)
+        {
+            Console.WriteLine("Terjadi kesalahan jaringan: " + ex.Message);
+        }
     }
 
-    // Method untuk menghapus kendaraan
+
+    // AUTOMATA ADE FATHIA NURAINI
     private static async Task DeleteKendaraan()
     {
-        Console.Write("Masukkan Plat Nomor Kendaraan yang ingin dihapus: ");
-        string platNomor = Console.ReadLine();
+        Console.Write("Masukkan Plat Nomor Kendaraan yang ingin dihapus (format: B 1234 XYZ): ");
+        string inputPlat = Console.ReadLine().ToUpper();
 
-        var response = await client.DeleteAsync($"{apiBaseUrl}/deleteKendaraan/{platNomor}");
+        // Otomatis format jika input rapat seperti B1234XYZ
+        var regexFormat = new Regex(@"^([A-Z]{1,2})(\d{1,4})([A-Z]{1,3})$");
+        if (regexFormat.IsMatch(inputPlat))
+        {
+            var match = regexFormat.Match(inputPlat);
+            inputPlat = $"{match.Groups[1].Value} {match.Groups[2].Value} {match.Groups[3].Value}";
+        }
 
+        // Validasi akhir: harus sudah dalam format B 1234 XYZ
+        string patternValid = @"^[A-Z]{1,2} [0-9]{1,4} [A-Z]{1,3}$";
+        if (!Regex.IsMatch(inputPlat, patternValid))
+        {
+            Console.WriteLine("Format plat nomor tidak valid! Contoh yang benar: B 1234 XYZ");
+            return;
+        }
+
+        try
+        {
+            var response = await client.DeleteAsync($"{apiBaseUrl}/deleteKendaraan/{inputPlat}");
+
+            if (response.IsSuccessStatusCode)
+                Console.WriteLine("Kendaraan berhasil dihapus.");
+            else
+                Console.WriteLine($"Gagal menghapus kendaraan. Status: {response.StatusCode}");
+        }
+        catch (HttpRequestException ex)
+        {
+            Console.WriteLine("Terjadi kesalahan jaringan: " + ex.Message);
+        }
     }
+
+
 }
