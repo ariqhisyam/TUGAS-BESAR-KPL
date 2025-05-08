@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 using System.Threading.Tasks;
+using TUGASBESAR_kelompok_SagaraDailyCheckUp;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,7 +27,8 @@ app.MapControllers();
 var apiTask = Task.Run(() => app.Run());
 
 // Menampilkan menu
-await Menu.ShowMenu();
+PilihMenu.PilihMenu1();
+
 
 // Menunggu hingga API selesai
 await apiTask;

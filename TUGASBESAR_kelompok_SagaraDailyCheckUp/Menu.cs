@@ -3,7 +3,11 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+<<<<<<< HEAD
 using System.Text.RegularExpressions;
+=======
+using TUGASBESAR_kelompok_SagaraDailyCheckUp;
+>>>>>>> AriqHisyamNabil
 
 public static class Menu
 {
@@ -36,7 +40,7 @@ public static class Menu
 
             if (inputUser == "5")
             {
-                Console.WriteLine("Keluar...");
+                PilihMenu.PilihMenu1();
                 break;
             }
 

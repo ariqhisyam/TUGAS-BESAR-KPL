@@ -21,11 +21,7 @@ namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers
             new Kendaraan { Merek = "BMW", PlatNomor = "XY789ZT"}
         };
 
-        private static List<Kerusakan> kerusakanList = new List<Kerusakan>
-        {
-            new Kerusakan { Merek = "Toyota", PlatNomor = "AB123CD", Kendala = "Mesin Overheating" },
-            new Kerusakan { Merek = "Honda", PlatNomor = "EF456GH", Kendala = "AC Rusak" }
-        };
+       
 
         private static List<Key> keyList = new List<Key>
         {
@@ -93,45 +89,7 @@ namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers
             return NotFound("Kendaraan tidak ditemukan!");
         }
 
-        // API untuk mendapatkan semua kerusakan
-        [HttpGet("getKerusakan")]
-        public IActionResult GetKerusakan()
-        {
-            return Ok(kerusakanList);
-        }
-
-        // API untuk memperbarui kerusakan
-        [HttpPut("updateKerusakan/{platNomor}")]
-        public IActionResult UpdateKerusakan(string platNomor, [FromBody] Kerusakan updatedKerusakan)
-        {
-            var kerusakan = kerusakanList.Find(k => k.PlatNomor == platNomor);
-            if (kerusakan == null)
-                return NotFound("Kerusakan tidak ditemukan!");
-
-            kerusakan.Kendala = updatedKerusakan.Kendala;
-            return Ok("Kerusakan berhasil diperbarui!");
-        }
-
-        // API untuk menambah kerusakan
-        [HttpPost("addKerusakan")]
-        public IActionResult AddKerusakan([FromBody] Kerusakan kerusakan)
-        {
-            kerusakanList = AddItem(kerusakanList, kerusakan);  // Menambah kerusakan dengan generics
-            return CreatedAtAction(nameof(GetKerusakan), new { platNomor = kerusakan.PlatNomor }, kerusakan);
-        }
-
-        // API untuk menghapus kerusakan berdasarkan platNomor
-        [HttpDelete("deleteKerusakan/{platNomor}")]
-        public IActionResult DeleteKerusakan(string platNomor)
-        {
-            var kerusakan = kerusakanList.Find(k => k.PlatNomor == platNomor);
-            if (kerusakan != null)
-            {
-                kerusakanList.Remove(kerusakan);
-                return NoContent();
-            }
-            return NotFound("Kerusakan tidak ditemukan!");
-        }
+       
 
         // API untuk mendapatkan semua key
         [HttpGet("getKey")]
@@ -175,26 +133,26 @@ namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers
             return NotFound("Key tidak ditemukan!");
         }
 
-        [HttpPut("setStatusKendaraan/{platNomor}")]
-        public IActionResult SetStatusKendaraan(string platNomor)
-        {
-            var kendaraan = kendaraanList.FirstOrDefault(k => k.PlatNomor == platNomor);
-            if (kendaraan == null)
-                return NotFound("Kendaraan tidak ditemukan!");
+        //[HttpPut("setStatusKendaraan/{platNomor}")]
+        //public IActionResult SetStatusKendaraan(string platNomor)
+        //{
+        //    var kendaraan = kendaraanList.FirstOrDefault(k => k.PlatNomor == platNomor);
+        //    if (kendaraan == null)
+        //        return NotFound("Kendaraan tidak ditemukan!");
 
-            // Count the number of damages for the vehicle
-            int kerusakanCount = kerusakanList.Count(k => k.PlatNomor == platNomor);
+        //    // Count the number of damages for the vehicle
+        //    int kerusakanCount = kerusakanList.Count(k => k.PlatNomor == platNomor);
 
-            // Set the status based on the number of damages
-            if (kerusakanCount < 3)
-                kendaraan.Status = "Low";
-            else if (kerusakanCount <= 5)
-                kendaraan.Status = "Medium";
-            else
-                kendaraan.Status = "Fatal";
+        //    // Set the status based on the number of damages
+        //    if (kerusakanCount < 3)
+        //        kendaraan.Status = "Low";
+        //    else if (kerusakanCount <= 5)
+        //        kendaraan.Status = "Medium";
+        //    else
+        //        kendaraan.Status = "Fatal";
 
-            return Ok($"Status kendaraan dengan plat nomor {platNomor} berhasil diperbarui menjadi {kendaraan.Status}.");
-        }
+        //    return Ok($"Status kendaraan dengan plat nomor {platNomor} berhasil diperbarui menjadi {kendaraan.Status}.");
+        //}
 
     }
 }
