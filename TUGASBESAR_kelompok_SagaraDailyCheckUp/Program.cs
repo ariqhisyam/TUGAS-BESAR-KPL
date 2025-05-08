@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 using System.Threading.Tasks;
+using TUGASBESAR_kelompok_SagaraDailyCheckUp;
 using TUGASBESAR_kelompok_SagaraDailyCheckUp.Model;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -36,7 +37,7 @@ app.MapControllers();
 var apiTask = Task.Run(() => app.RunAsync());
 
 // 🔥 Jalankan CLI Menu setelah API dimulai
-await Menu.ShowMenu();
+PilihMenu.PilihMenu1();
 
 // Tunggu API task selesai jika user menutup menu CLI
 await apiTask;

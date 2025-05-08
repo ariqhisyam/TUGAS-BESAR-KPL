@@ -4,6 +4,8 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.IO;
+using TUGASBESAR_kelompok_SagaraDailyCheckUp;
+using System.Text.RegularExpressions;
 
 public static class Menu
 {
@@ -12,6 +14,7 @@ public static class Menu
 
     private static Dictionary<string, Func<Task>> menuActions = new();
     private static Dictionary<string, string> menuLabels = new();
+    private static object platNomor;
     private static readonly Dictionary<string, Func<Task>> methodMap = new()
     {
         { "CreateKey", CreateKey },
