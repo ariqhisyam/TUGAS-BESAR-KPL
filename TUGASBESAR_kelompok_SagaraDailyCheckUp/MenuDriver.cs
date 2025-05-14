@@ -3,6 +3,8 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using TUGASBESAR_kelompok_SagaraDailyCheckUp.Model;
+using TUGASBESAR_kelompok_SagaraDailyCheckUp;
 
 public static class MenuDriver
 {
@@ -17,8 +19,8 @@ public static class MenuDriver
         { "3", HapusDataKerusakan },
 
     };
-
-    public static async Task ShowMenu()
+//dsini
+    public static async Task ShowDriver()
     {
         string inputUser;
         do
@@ -34,7 +36,7 @@ public static class MenuDriver
 
             if (inputUser == "5")
             {
-                Console.WriteLine("Keluar...");
+                PilihMenu.PilihMenu1();
                 break;
             }
 
@@ -79,6 +81,15 @@ public static class MenuDriver
         var content = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
 
         var response = await client.PostAsync($"{apiBaseUrl}/addKerusakan", content);
+        if (response.IsSuccessStatusCode)
+        {
+            Console.WriteLine("Data Kerusakan Berhasil Di Buat,dan telah ke kirim ke admin");
+        }
+        else
+        {
+            Console.WriteLine($"Gagal membuat data kerusakan. Status: {response.StatusCode}");
+        }
+        
 
     }
 
@@ -103,5 +114,41 @@ public static class MenuDriver
         string platNomor = Console.ReadLine();
         var response = await client.DeleteAsync($"{apiBaseUrl}/deleteKerusakan/{platNomor}");
     }
+
+    public static async Task TampilkanDataKerusakanDriver()
+    {
+        try
+        {
+            var response = await client.GetAsync($"{apiBaseUrl}/getKerusakanDriver");
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonResponse = await response.Content.ReadAsStringAsync();
+                var kerusakanList = JsonSerializer.Deserialize<List<Kerusakan>>(jsonResponse);
+
+                if (kerusakanList != null && kerusakanList.Count > 0)
+                {
+                    Console.WriteLine("Data Kerusakan Driver:");
+                    foreach (var kerusakan in kerusakanList)
+                    {
+                        Console.WriteLine($"Plat Nomor: {kerusakan.PlatNomor}, Kendala: {kerusakan.Kendala}, Catatan: {kerusakan.Catatan}");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Tidak ada data kerusakan.");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"Gagal mengambil data kerusakan driver. Status: {response.StatusCode}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Terjadi kesalahan: " + ex.Message);
+        }
+    }
+
+  
 
 }

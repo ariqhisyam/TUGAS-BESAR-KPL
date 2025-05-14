@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.IO;
 using TUGASBESAR_kelompok_SagaraDailyCheckUp;
 using System.Text.RegularExpressions;
+using TUGASBESAR_kelompok_SagaraDailyCheckUp.Model;
 
 public static class Menu
 {
@@ -20,7 +21,8 @@ public static class Menu
         { "CreateKey", CreateKey },
         { "AddKendaraan", AddKendaraan },
         { "UpdateKendaraan", UpdateKendaraan },
-        { "DeleteKendaraan", DeleteKendaraan }
+        { "DeleteKendaraan", DeleteKendaraan },
+            { "TampilkanDataKendaraan", TampilkanDataKendaraan }
     };
 
     public static async Task ShowMenu()
@@ -219,6 +221,113 @@ public static class Menu
         {
             Console.WriteLine("Terjadi kesalahan jaringan: " + ex.Message);
         }
+    }
+
+    private static async Task TampilkanDataKendaraan()
+{
+    try
+    {
+        var response = await client.GetAsync($"{apiBaseUrl}/getKendaraan");
+        if (response.IsSuccessStatusCode)
+        {
+            var jsonResponse = await response.Content.ReadAsStringAsync();
+            var kendaraanList = JsonSerializer.Deserialize<List<Kendaraan>>(jsonResponse);
+            
+            if (kendaraanList != null && kendaraanList.Count > 0)
+            {
+                Console.WriteLine("Data Kendaraan:");
+                foreach (var kendaraan in kendaraanList)
+                {
+                    Console.WriteLine($"Merek: {kendaraan.Merek}, Plat Nomor: {kendaraan.PlatNomor}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Tidak ada data kendaraan.");
+            }
+        }
+        else
+        {
+            Console.WriteLine($"Gagal mengambil data kendaraan. Status: {response.StatusCode}");
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine("Terjadi kesalahan: " + ex.Message);
+    }
+}
+
+    // PENAMBAHAN tampilkan data kendaraan, tampilkan data kerusakan di driver, tampilkan data kerusakan yang dari driver ke admin (ADE FATHIA NURAINI)
+    private static async Task TampilkanDataKerusakan()
+    {
+        try
+        {
+            var response = await client.GetAsync($"{apiBaseUrl}/getKerusakan");
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonResponse = await response.Content.ReadAsStringAsync();
+                var kerusakanList = JsonSerializer.Deserialize<List<Kerusakan>>(jsonResponse);
+
+                if (kerusakanList != null && kerusakanList.Count > 0)
+                {
+                    Console.WriteLine("Data Kerusakan:");
+                    foreach (var kerusakan in kerusakanList)
+                    {
+                        Console.WriteLine($"Plat Nomor: {kerusakan.PlatNomor}, Kendala: {kerusakan.Kendala}, Catatan: {kerusakan.Catatan}");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Tidak ada data kerusakan.");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"Gagal mengambil data kerusakan. Status: {response.StatusCode}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Terjadi kesalahan: " + ex.Message);
+        }
+    }
+
+    // PENAMBAHAN tampilkan data kendaraan, tampilkan data kerusakan di driver, tampilkan data kerusakan yang dari driver ke admin (ADE FATHIA NURAINI)
+    public static async Task selectMenu()
+    {
+        string inputUser;
+        do
+        {
+            Console.Clear();
+            Console.WriteLine("=== PILIH MENU ===");
+            Console.WriteLine("1. Tampilkan Data Kendaraan");
+            Console.WriteLine("2. Tampilkan Data Kerusakan");
+            Console.WriteLine("0. Keluar");
+            Console.Write("Pilih menu: ");
+            inputUser = Console.ReadLine();
+
+            if (inputUser == "0")
+            {
+                PilihMenu.PilihMenu1();
+                break;
+            }
+
+            if (inputUser == "1")
+            {
+                await TampilkanDataKendaraan();
+            }
+            else if (inputUser == "2")
+            {
+                await TampilkanDataKerusakan();
+            }
+            else
+            {
+                Console.WriteLine("Pilihan tidak valid!");
+            }
+
+            Console.WriteLine("Tekan tombol apapun untuk melanjutkan...");
+            Console.ReadKey();
+        } while (true);
     }
 
 

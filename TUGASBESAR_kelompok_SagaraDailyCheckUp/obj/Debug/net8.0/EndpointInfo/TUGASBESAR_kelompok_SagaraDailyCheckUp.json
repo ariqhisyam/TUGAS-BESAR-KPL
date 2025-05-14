@@ -239,6 +239,18 @@
         }
       }
     },
+    "/api/Admin/getTanggalHariIni": {
+      "get": {
+        "tags": [
+          "Admin"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Driver/getKerusakan": {
       "get": {
         "tags": [
@@ -337,18 +349,6 @@
               "type": "string"
             }
           }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Admin/getTanggalHariIni": {
-      "get": {
-        "tags": [
-          "Admin"
         ],
         "responses": {
           "200": {

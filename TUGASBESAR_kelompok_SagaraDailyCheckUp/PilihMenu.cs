@@ -4,6 +4,7 @@
     {
         public static void PilihMenu1()
         {
+            Console.Clear();
             Console.WriteLine("Pilih menu:");
             Console.WriteLine("1. Menu Admin");
             Console.WriteLine("2. Menu Driver");
@@ -15,7 +16,7 @@
                     Menu.ShowMenu().Wait();
                     break;
                 case "2":
-                    MenuDriver.ShowMenu().Wait();
+                    MenuDriver.ShowDriver().Wait();
                     break;
                 case "3":
                     Console.WriteLine("Keluar...");
