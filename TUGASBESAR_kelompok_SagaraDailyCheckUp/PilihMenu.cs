@@ -8,7 +8,8 @@
             Console.WriteLine("Pilih menu:");
             Console.WriteLine("1. Menu Admin");
             Console.WriteLine("2. Menu Driver");
-            Console.WriteLine("3. Keluar");
+            Console.WriteLine("3. Menu Teknisi");
+            Console.WriteLine("4. Keluar");
             string choice = Console.ReadLine();
             switch (choice)
             {
@@ -19,6 +20,10 @@
                     MenuDriver.ShowDriver().Wait();
                     break;
                 case "3":
+                    var menuTeknisi = new MenuTeknisi(); 
+                    menuTeknisi.ShowMenuTeknisi().Wait(); 
+                    break;
+                case "4":
                     Console.WriteLine("Keluar...");
                     break;
                 default:

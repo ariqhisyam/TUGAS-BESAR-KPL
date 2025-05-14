@@ -1,13 +1,21 @@
-﻿using TUGASBESAR_kelompok_SagaraDailyCheckUp.Base;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
+using TUGASBESAR_kelompok_SagaraDailyCheckUp.Base;
 
 namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Model
 {
 
-    public class Kendaraan : BaseEntity
+    public class Kendaraan 
     {
-        public string Nama { get; set; }
+
+        public int Id { get; set; }
+
+        [JsonPropertyName("merek")]
+        public string Merek { get; set; }
+        [JsonPropertyName("platNomor")]
         public string PlatNomor { get; set; }
-        public bool IsReady { get; set; } // Added the missing property  
-        public string Merek { get; internal set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
+        public bool IsReady { get; set; }
     }
 }

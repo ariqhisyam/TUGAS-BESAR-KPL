@@ -22,7 +22,8 @@ public static class Menu
         { "AddKendaraan", AddKendaraan },
         { "UpdateKendaraan", UpdateKendaraan },
         { "DeleteKendaraan", DeleteKendaraan },
-            { "TampilkanDataKendaraan", TampilkanDataKendaraan }
+            { "TampilkanDataKendaraan", TampilkanDataKendaraan },
+         { "TampilkanDataKerusakaan", TampilkanDataKerusakan }
     };
 
     public static async Task ShowMenu()
@@ -98,6 +99,7 @@ public static class Menu
 
     private static async Task CreateKey()
     {
+        Console.Clear();
         Console.WriteLine("Masukkan Username: ");
         string username = Console.ReadLine();
 
@@ -126,6 +128,7 @@ public static class Menu
 
     private static async Task AddKendaraan()
     {
+        Console.Clear();
         Console.WriteLine("Masukkan Merek Kendaraan: ");
         string merek = Console.ReadLine();
 
@@ -151,6 +154,7 @@ public static class Menu
 
     private static async Task UpdateKendaraan()
     {
+        Console.Clear();
         Console.WriteLine("Masukkan Plat Nomor Kendaraan yang ingin diupdate (format: B 1234 XYZ): ");
         string platNomor = Console.ReadLine().ToUpper();
 
@@ -212,6 +216,7 @@ public static class Menu
 
         try
         {
+            Console.Clear();
             var response = await client.DeleteAsync($"{apiBaseUrl}/deleteKendaraan/{platNomor}");
             Console.WriteLine(response.IsSuccessStatusCode
                 ? "Kendaraan berhasil dihapus."
@@ -224,72 +229,53 @@ public static class Menu
     }
 
     private static async Task TampilkanDataKendaraan()
-{
-    try
-    {
-        var response = await client.GetAsync($"{apiBaseUrl}/getKendaraan");
-        if (response.IsSuccessStatusCode)
-        {
-            var jsonResponse = await response.Content.ReadAsStringAsync();
-            var kendaraanList = JsonSerializer.Deserialize<List<Kendaraan>>(jsonResponse);
-            
-            if (kendaraanList != null && kendaraanList.Count > 0)
-            {
-                Console.WriteLine("Data Kendaraan:");
-                foreach (var kendaraan in kendaraanList)
-                {
-                    Console.WriteLine($"Merek: {kendaraan.Merek}, Plat Nomor: {kendaraan.PlatNomor}");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Tidak ada data kendaraan.");
-            }
-        }
-        else
-        {
-            Console.WriteLine($"Gagal mengambil data kendaraan. Status: {response.StatusCode}");
-        }
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine("Terjadi kesalahan: " + ex.Message);
-    }
-}
-
-    // PENAMBAHAN tampilkan data kendaraan, tampilkan data kerusakan di driver, tampilkan data kerusakan yang dari driver ke admin (ADE FATHIA NURAINI)
-    private static async Task TampilkanDataKerusakan()
     {
         try
         {
-            var response = await client.GetAsync($"{apiBaseUrl}/getKerusakan");
+            var response = await client.GetAsync($"{apiBaseUrl}/getKendaraan");
             if (response.IsSuccessStatusCode)
             {
                 var jsonResponse = await response.Content.ReadAsStringAsync();
-                var kerusakanList = JsonSerializer.Deserialize<List<Kerusakan>>(jsonResponse);
+           
 
-                if (kerusakanList != null && kerusakanList.Count > 0)
+                var kendaraanList = JsonSerializer.Deserialize<List<Kendaraan>>(jsonResponse);
+
+                // Debugging: Cek apakah list terisi
+                if (kendaraanList != null && kendaraanList.Count > 0)
+
                 {
-                    Console.WriteLine("Data Kerusakan:");
-                    foreach (var kerusakan in kerusakanList)
+                    Console.Clear();
+                    Console.WriteLine("Data Kendaraan:");
+                    foreach (var kendaraan in kendaraanList)
                     {
-                        Console.WriteLine($"Plat Nomor: {kerusakan.PlatNomor}, Kendala: {kerusakan.Kendala}, Catatan: {kerusakan.Catatan}");
+                        // Debugging untuk menampilkan nilai setiap kendaraan
+                        Console.WriteLine($"Merek: {kendaraan.Merek}, Plat Nomor: {kendaraan.PlatNomor}");
                     }
                 }
                 else
                 {
-                    Console.WriteLine("Tidak ada data kerusakan.");
+                    Console.WriteLine("Tidak ada data kendaraan.");
                 }
             }
             else
             {
-                Console.WriteLine($"Gagal mengambil data kerusakan. Status: {response.StatusCode}");
+                Console.WriteLine($"Gagal mengambil data kendaraan. Status: {response.StatusCode}");
             }
         }
         catch (Exception ex)
         {
             Console.WriteLine("Terjadi kesalahan: " + ex.Message);
         }
+    }
+
+
+
+
+    // PENAMBAHAN tampilkan data kendaraan, tampilkan data kerusakan di driver, tampilkan data kerusakan yang dari driver ke admin (ADE FATHIA NURAINI AND RELINGGA)
+    private static async Task TampilkanDataKerusakan()
+    {
+        Console.Clear();
+        await MenuDriver.TampilkanDataKerusakanDriver();
     }
 
     // PENAMBAHAN tampilkan data kendaraan, tampilkan data kerusakan di driver, tampilkan data kerusakan yang dari driver ke admin (ADE FATHIA NURAINI)

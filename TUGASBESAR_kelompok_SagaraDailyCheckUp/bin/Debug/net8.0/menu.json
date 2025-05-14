@@ -1,7 +1,8 @@
 {
-  "1": "CreateKey",
-  "2": "AddKendaraan",
-  "3": "UpdateKendaraan",
-  "4": "DeleteKendaraan",
-  "5": "TampilkanDataKendaraan"
+    "1": "CreateKey",
+    "2": "AddKendaraan",
+    "3": "UpdateKendaraan",
+    "4": "DeleteKendaraan",
+    "5": "TampilkanDataKendaraan",
+    "6": "TampilkanDataKerusakaan"
 }

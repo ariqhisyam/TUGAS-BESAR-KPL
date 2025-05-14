@@ -17,6 +17,8 @@ public static class MenuDriver
         { "1", InputDataKerusakan },
         { "2", EditDataKerusakan },
         { "3", HapusDataKerusakan },
+        { "4", TampilkanDataKerusakanDriver },
+        
 
     };
 //dsini
@@ -30,6 +32,7 @@ public static class MenuDriver
             Console.WriteLine("1. Input Data Kerusakan");
             Console.WriteLine("2. Edit Data Kerusakan");
             Console.WriteLine("3. Hapus Data Kerusakan");
+            Console.WriteLine("4. Tampilkan Data Kerusakan Driver");
             Console.WriteLine("5. Keluar");
             Console.Write("Pilih menu (1-5): ");
             inputUser = Console.ReadLine();
@@ -54,59 +57,171 @@ public static class MenuDriver
         } while (inputUser != "5");
     }
 
-    public static async Task InputDataKerusakan() { 
-        Console.WriteLine("Masukkan Merek Kendaraan: ");
-        string merek = Console.ReadLine();
+    //public static async Task InputDataKerusakan() { 
+    //    Console.WriteLine("Masukkan Merek Kendaraan: ");
+    //    string merek = Console.ReadLine();
 
-        Console.WriteLine("Masukkan Plat Nomor: ");
-        string platNomor = Console.ReadLine();
+    //    Console.WriteLine("Masukkan Plat Nomor: ");
+    //    string platNomor = Console.ReadLine();
 
-        Console.WriteLine("Masukkan Kendala: ");
-        string kendala = Console.ReadLine();
+    //    Console.WriteLine("Masukkan Kendala: ");
+    //    string kendala = Console.ReadLine();
 
-        Console.WriteLine("Masukkan Catatan: ");
-        string catatan = Console.ReadLine();
+    //    Console.WriteLine("Masukkan Catatan: ");
+    //    string catatan = Console.ReadLine();
 
-        var kerusakan = new
+    //    var kerusakan = new
+    //    {
+    //        Merek = merek,
+    //        PlatNomor = platNomor,
+    //        Kendala = kendala,
+    //        Catatan = catatan
+    //    };
+
+
+
+    //    var jsonContent = JsonSerializer.Serialize(kerusakan);
+    //    var content = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
+
+    //    var response = await client.PostAsync($"{apiBaseUrl}/addKerusakan", content);
+    //    if (response.IsSuccessStatusCode)
+    //    {
+    //        Console.WriteLine("Data Kerusakan Berhasil Di Buat,dan telah ke kirim ke admin dan teknisi");
+    //    }
+    //    else
+    //    {
+    //        Console.WriteLine($"Gagal membuat data kerusakan. Status: {response.StatusCode}");
+    //    }
+
+
+    //}
+    public static async Task InputDataKerusakan()
+    {
+        // Menampilkan daftar kendaraan yang ada dari AdminController
+        Console.WriteLine("Menampilkan daftar kendaraan yang tersedia...");
+        var kendaraanResponse = await client.GetAsync("https://localhost:7119/api/Admin/getKendaraan");  // Pastikan menggunakan API Admin untuk kendaraan
+
+        if (kendaraanResponse.IsSuccessStatusCode)
         {
-            Merek = merek,
-            PlatNomor = platNomor,
-            Kendala = kendala,
-            Catatan = catatan
-        };
+            var jsonKendaraanResponse = await kendaraanResponse.Content.ReadAsStringAsync();
+            var kendaraanList = JsonSerializer.Deserialize<List<Kendaraan>>(jsonKendaraanResponse);
 
+            if (kendaraanList != null && kendaraanList.Count > 0)
+            {
+                Console.WriteLine("Daftar Kendaraan Tersedia:");
+                foreach (var kendaraan in kendaraanList)
+                {
+                    Console.WriteLine($"Plat Nomor: {kendaraan.PlatNomor}, Merek: {kendaraan.Merek}");
+                }
 
+                // Meminta pengguna untuk memilih plat nomor
+                Console.WriteLine("Masukkan Plat Nomor Kendaraan untuk input kerusakan: ");
+                string platNomor = Console.ReadLine();
 
-        var jsonContent = JsonSerializer.Serialize(kerusakan);
-        var content = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
+                // Verifikasi apakah plat nomor yang dimasukkan ada dalam daftar kendaraan
+                var selectedKendaraan = kendaraanList.FirstOrDefault(k => k.PlatNomor == platNomor);
+                if (selectedKendaraan != null)
+                {
+                    Console.WriteLine($"Kendaraan yang dipilih: {selectedKendaraan.PlatNomor} - {selectedKendaraan.Merek}");
 
-        var response = await client.PostAsync($"{apiBaseUrl}/addKerusakan", content);
-        if (response.IsSuccessStatusCode)
-        {
-            Console.WriteLine("Data Kerusakan Berhasil Di Buat,dan telah ke kirim ke admin");
+                    // Memasukkan data kerusakan
+                    Console.WriteLine("Masukkan Kendala: ");
+                    string kendala = Console.ReadLine();
+
+                    Console.WriteLine("Masukkan Catatan: ");
+                    string catatan = Console.ReadLine();
+
+                    var kerusakan = new
+                    {
+                        merek = selectedKendaraan.Merek,
+                        platNomor = platNomor,
+                        kendala = kendala,
+                        catatan = catatan
+                    };
+
+                    var jsonContent = JsonSerializer.Serialize(kerusakan);
+                    var content = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
+
+                    var response = await client.PostAsync($"{apiBaseUrl}/addKerusakan", content);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        Console.WriteLine("Data Kerusakan Berhasil Dibuat, dan telah dikirim ke admin dan teknisi.");
+                    }
+                    else
+                    {
+                        string errorResponse = await response.Content.ReadAsStringAsync();
+                        Console.WriteLine($"Gagal membuat data kerusakan. Status: {response.StatusCode}, Error: {errorResponse}");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Plat Nomor tidak ditemukan. Silakan coba lagi.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Tidak ada kendaraan yang tersedia.");
+            }
         }
         else
         {
-            Console.WriteLine($"Gagal membuat data kerusakan. Status: {response.StatusCode}");
+            Console.WriteLine($"Gagal mengambil data kendaraan. Status: {kendaraanResponse.StatusCode}");
         }
-        
-
     }
+
+
 
     public static async Task EditDataKerusakan()
     {
         Console.WriteLine("Masukkan Plat Nomor Kendaraan yang ingin diedit: ");
         string platNomor = Console.ReadLine();
-        Console.WriteLine("Masukkan Kendala Baru: ");
-        string kendala = Console.ReadLine();
-        var kerusakan = new
+
+        // Mendapatkan data kerusakan berdasarkan plat nomor
+        var response = await client.GetAsync($"{apiBaseUrl}/getKerusakan");
+        if (response.IsSuccessStatusCode)
         {
-            Kendala = kendala
-        };
-        var jsonContent = JsonSerializer.Serialize(kerusakan);
-        var content = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
-        var response = await client.PutAsync($"{apiBaseUrl}/updateKerusakan/{platNomor}", content);
+            var jsonResponse = await response.Content.ReadAsStringAsync();
+            var kerusakanList = JsonSerializer.Deserialize<List<Kerusakan>>(jsonResponse);
+
+            // Cari kerusakan berdasarkan plat nomor
+            var kerusakan = kerusakanList?.FirstOrDefault(k => k.PlatNomor == platNomor);
+            if (kerusakan != null)
+            {
+                Console.WriteLine($"Data Kerusakan yang ditemukan: {kerusakan.PlatNomor}, Kendala: {kerusakan.Kendala}, Catatan: {kerusakan.Catatan}");
+
+                // memperbarui kendala atau catatan
+                Console.WriteLine("Masukkan Kendala Baru (kosongkan jika tidak ingin mengubah): ");
+                string kendalaBaru = Console.ReadLine();
+                if (!string.IsNullOrEmpty(kendalaBaru)) kerusakan.Kendala = kendalaBaru;
+
+                Console.WriteLine("Masukkan Catatan Baru (kosongkan jika tidak ingin mengubah): ");
+                string catatanBaru = Console.ReadLine();
+                if (!string.IsNullOrEmpty(catatanBaru)) kerusakan.Catatan = catatanBaru;
+
+                var jsonContent = JsonSerializer.Serialize(kerusakan);
+                var content = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
+
+                var updateResponse = await client.PutAsync($"{apiBaseUrl}/updateKerusakan/{platNomor}", content);
+                if (updateResponse.IsSuccessStatusCode)
+                {
+                    Console.WriteLine("Data Kerusakan berhasil diperbarui!");
+                }
+                else
+                {
+                    Console.WriteLine($"Gagal memperbarui data kerusakan. Status: {updateResponse.StatusCode}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Plat Nomor tidak ditemukan.");
+            }
+        }
+        else
+        {
+            Console.WriteLine($"Gagal mengambil data kerusakan. Status: {response.StatusCode}");
+        }
     }
+
 
     public static async Task HapusDataKerusakan()
     {
@@ -117,19 +232,24 @@ public static class MenuDriver
 
     public static async Task TampilkanDataKerusakanDriver()
     {
+        Console.Clear();
         try
         {
-            var response = await client.GetAsync($"{apiBaseUrl}/getKerusakanDriver");
+            var response = await client.GetAsync($"{apiBaseUrl}/getKerusakan");
             if (response.IsSuccessStatusCode)
             {
                 var jsonResponse = await response.Content.ReadAsStringAsync();
                 var kerusakanList = JsonSerializer.Deserialize<List<Kerusakan>>(jsonResponse);
-
                 if (kerusakanList != null && kerusakanList.Count > 0)
                 {
+                 
                     Console.WriteLine("Data Kerusakan Driver:");
+                   
                     foreach (var kerusakan in kerusakanList)
                     {
+
+                     
+                        Console.WriteLine("Data Kerusakan :");
                         Console.WriteLine($"Plat Nomor: {kerusakan.PlatNomor}, Kendala: {kerusakan.Kendala}, Catatan: {kerusakan.Catatan}");
                     }
                 }
@@ -148,7 +268,8 @@ public static class MenuDriver
             Console.WriteLine("Terjadi kesalahan: " + ex.Message);
         }
     }
+}
+   
 
   
 
-}

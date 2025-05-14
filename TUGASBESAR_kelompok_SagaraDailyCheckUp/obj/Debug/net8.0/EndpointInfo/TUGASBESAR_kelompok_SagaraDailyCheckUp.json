@@ -367,6 +367,14 @@
             "type": "integer",
             "format": "int32"
           },
+          "merek": {
+            "type": "string",
+            "nullable": true
+          },
+          "platNomor": {
+            "type": "string",
+            "nullable": true
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -375,21 +383,8 @@
             "type": "string",
             "format": "date-time"
           },
-          "nama": {
-            "type": "string",
-            "nullable": true
-          },
-          "platNomor": {
-            "type": "string",
-            "nullable": true
-          },
           "isReady": {
             "type": "boolean"
-          },
-          "merek": {
-            "type": "string",
-            "nullable": true,
-            "readOnly": true
           }
         },
         "additionalProperties": false
@@ -409,7 +404,7 @@
             "type": "string",
             "nullable": true
           },
-          "catatan": {
+          "Catatan": {
             "type": "string",
             "nullable": true
           }
