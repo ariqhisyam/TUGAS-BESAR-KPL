@@ -1,9 +1,14 @@
-﻿namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Model
+﻿using System.Text.Json.Serialization;
+
+namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Model
 {
     public class Key
     {
+        [JsonPropertyName("username")]
         public string Username { get; set; }
+        [JsonPropertyName("role")]
         public string Role { get; set; }
+        [JsonPropertyName("Keyvalue")]
         public string KeyValue { get; set; }
     }
 

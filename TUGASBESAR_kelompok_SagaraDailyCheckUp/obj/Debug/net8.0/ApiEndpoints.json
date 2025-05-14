@@ -17,22 +17,6 @@
   },
   {
     "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
-    "Method": "AddKey",
-    "RelativePath": "api/Admin/addKey",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "key",
-        "Type": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Model.Key",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
     "Method": "DeleteKendaraan",
     "RelativePath": "api/Admin/deleteKendaraan/{platNomor}",
     "HttpMethod": "DELETE",
@@ -41,22 +25,6 @@
     "Parameters": [
       {
         "Name": "platNomor",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
-    "Method": "DeleteKey",
-    "RelativePath": "api/Admin/deleteKey/{username}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "username",
         "Type": "System.String",
         "IsRequired": true
       }
@@ -91,26 +59,6 @@
   },
   {
     "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
-    "Method": "GetKey",
-    "RelativePath": "api/Admin/getKey",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
-    "Method": "GetTanggalHariIni",
-    "RelativePath": "api/Admin/getTanggalHariIni",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
     "Method": "UpdateKendaraan",
     "RelativePath": "api/Admin/updateKendaraan/{platNomor}",
     "HttpMethod": "PUT",
@@ -125,27 +73,6 @@
       {
         "Name": "updatedKendaraan",
         "Type": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Model.Kendaraan",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.AdminController",
-    "Method": "UpdateKey",
-    "RelativePath": "api/Admin/updateKey/{username}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "username",
-        "Type": "System.String",
-        "IsRequired": true
-      },
-      {
-        "Name": "updatedKey",
-        "Type": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Model.Key",
         "IsRequired": true
       }
     ],
@@ -209,6 +136,127 @@
       {
         "Name": "updatedKerusakan",
         "Type": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Model.Kerusakan",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.LoginController",
+    "Method": "AddKey",
+    "RelativePath": "api/Login/addKey",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Model.Key",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.LoginController",
+    "Method": "DeleteKey",
+    "RelativePath": "api/Login/deleteKey/{username}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.LoginController",
+    "Method": "GetKey",
+    "RelativePath": "api/Login/getKey",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.LoginController",
+    "Method": "GetTanggalHariIni",
+    "RelativePath": "api/Login/getTanggalHariIni",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.LoginController",
+    "Method": "LoginAdmin",
+    "RelativePath": "api/Login/loginAdmin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Model.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.LoginController",
+    "Method": "loginDriver",
+    "RelativePath": "api/Login/loginDriver",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Model.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.LoginController",
+    "Method": "LoginTeknisi",
+    "RelativePath": "api/Login/loginTeknisi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Model.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers.LoginController",
+    "Method": "UpdateKey",
+    "RelativePath": "api/Login/updateKey/{username}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedKey",
+        "Type": "TUGASBESAR_kelompok_SagaraDailyCheckUp.Model.Key",
         "IsRequired": true
       }
     ],

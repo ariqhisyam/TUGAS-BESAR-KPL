@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using TUGASBESAR_kelompok_SagaraDailyCheckUp.Model;
 using TUGASBESAR_kelompok_SagaraDailyCheckUp;
+using System.Text;
 
 public static class MenuDriver
 {
@@ -21,9 +22,116 @@ public static class MenuDriver
         
 
     };
-//dsini
+
+
+    public static async Task<string?> LoginDriver()
+    {
+        Console.Clear();
+        Console.WriteLine("=== LOGIN DRIVER ===");
+        Console.Write("Masukkan Username: ");
+        string? username = Console.ReadLine();
+        Console.Write("Masukkan Key: ");
+        string? key = Console.ReadLine();
+
+        // Validate input
+        if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(key))
+        {
+            Console.WriteLine("Username dan key harus diisi!");
+            await Task.Delay(1000);
+            return null;
+        }
+
+        try
+        {
+            var loginData = new { Username = username, Key = key };
+            var jsonContent = JsonSerializer.Serialize(loginData);
+            var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+            // Correct endpoint URL
+            var response = await client.PostAsync("https://localhost:7119/api/Login/loginDriver", content);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var responseBody = await response.Content.ReadAsStringAsync();
+                using var doc = JsonDocument.Parse(responseBody);
+
+                // Check if login was successful
+                if (doc.RootElement.TryGetProperty("success", out var successElement) &&
+                    successElement.GetBoolean())
+                {
+                    // Get the API key
+                    if (doc.RootElement.TryGetProperty("key", out var keyElement))
+                    {
+                        string apiKey = keyElement.GetString();
+                        Console.WriteLine("Login berhasil sebagai Driver.");
+                        await Task.Delay(1000);
+                        return apiKey;
+                    }
+                }
+
+                // If success=false or key not found
+                if (doc.RootElement.TryGetProperty("message", out var messageElement))
+                {
+                    Console.WriteLine($"Login gagal: {messageElement.GetString()}");
+                }
+                else
+                {
+                    Console.WriteLine("Login gagal. Format respons tidak valid.");
+                }
+            }
+            else
+            {
+                // Handle non-success status codes
+                string errorDetail = await response.Content.ReadAsStringAsync();
+                Console.WriteLine("Login gagal. Status: " + response.StatusCode);
+
+                try
+                {
+                    // Try to parse error message
+                    var errorDoc = JsonDocument.Parse(errorDetail);
+                    if (errorDoc.RootElement.TryGetProperty("message", out var errorMessage))
+                    {
+                        Console.WriteLine($"Detail error: {errorMessage.GetString()}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Detail error: {errorDetail}");
+                    }
+                }
+                catch
+                {
+                    Console.WriteLine($"Detail error: {errorDetail}");
+                }
+            }
+        }
+        catch (HttpRequestException ex)
+        {
+            Console.WriteLine($"Gagal terhubung ke server: {ex.Message}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Terjadi kesalahan: {ex.Message}");
+        }
+
+        await Task.Delay(1000);
+        return null;
+    }
+
+
+    //dsini
     public static async Task ShowDriver()
     {
+        // Tambahkan login sebelum menu
+        string? apiKey = await LoginDriver();
+        if (string.IsNullOrEmpty(apiKey))
+        {
+            Console.WriteLine("Akses ditolak. Hanya driver yang dapat mengakses menu ini.");
+            Console.WriteLine("Tekan tombol apapun untuk kembali...");
+            Console.ReadKey();
+            PilihMenu.PilihMenu1();
+            return;
+        }
+
         string inputUser;
         do
         {
@@ -57,44 +165,7 @@ public static class MenuDriver
         } while (inputUser != "5");
     }
 
-    //public static async Task InputDataKerusakan() { 
-    //    Console.WriteLine("Masukkan Merek Kendaraan: ");
-    //    string merek = Console.ReadLine();
 
-    //    Console.WriteLine("Masukkan Plat Nomor: ");
-    //    string platNomor = Console.ReadLine();
-
-    //    Console.WriteLine("Masukkan Kendala: ");
-    //    string kendala = Console.ReadLine();
-
-    //    Console.WriteLine("Masukkan Catatan: ");
-    //    string catatan = Console.ReadLine();
-
-    //    var kerusakan = new
-    //    {
-    //        Merek = merek,
-    //        PlatNomor = platNomor,
-    //        Kendala = kendala,
-    //        Catatan = catatan
-    //    };
-
-
-
-    //    var jsonContent = JsonSerializer.Serialize(kerusakan);
-    //    var content = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
-
-    //    var response = await client.PostAsync($"{apiBaseUrl}/addKerusakan", content);
-    //    if (response.IsSuccessStatusCode)
-    //    {
-    //        Console.WriteLine("Data Kerusakan Berhasil Di Buat,dan telah ke kirim ke admin dan teknisi");
-    //    }
-    //    else
-    //    {
-    //        Console.WriteLine($"Gagal membuat data kerusakan. Status: {response.StatusCode}");
-    //    }
-
-
-    //}
     public static async Task InputDataKerusakan()
     {
         // Menampilkan daftar kendaraan yang ada dari AdminController

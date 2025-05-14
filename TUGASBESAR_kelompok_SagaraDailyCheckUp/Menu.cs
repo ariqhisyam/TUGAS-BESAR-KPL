@@ -7,6 +7,7 @@ using System.IO;
 using TUGASBESAR_kelompok_SagaraDailyCheckUp;
 using System.Text.RegularExpressions;
 using TUGASBESAR_kelompok_SagaraDailyCheckUp.Model;
+using System.Text;
 
 public static class Menu
 {
@@ -22,12 +23,24 @@ public static class Menu
         { "AddKendaraan", AddKendaraan },
         { "UpdateKendaraan", UpdateKendaraan },
         { "DeleteKendaraan", DeleteKendaraan },
-            { "TampilkanDataKendaraan", TampilkanDataKendaraan },
-         { "TampilkanDataKerusakaan", TampilkanDataKerusakan }
+        { "TampilkanDataKendaraan", TampilkanDataKendaraan },
+        { "TampilkanDataKerusakaan", TampilkanDataKerusakan },
+        { "TampilkanKey", TampilkanKey },
+        { "EditKey", EditKey },
+        { "HapusKey", HapusKey }
     };
 
     public static async Task ShowMenu()
     {
+        string? apiKey = await LoginAdmin();
+        if (string.IsNullOrEmpty(apiKey))
+        {
+            Console.WriteLine("Akses ditolak. Hanya admin yang dapat mengakses menu ini.");
+            Console.WriteLine("Tekan tombol apapun untuk kembali...");
+            Console.ReadKey();
+            PilihMenu.PilihMenu1();
+            return;
+        }
         await LoadMenuFromJson("menu.json");
 
         string inputUser;
@@ -93,6 +106,8 @@ public static class Menu
             "AddKendaraan" => "Tambah Kendaraan",
             "UpdateKendaraan" => "Update Kendaraan",
             "DeleteKendaraan" => "Hapus Kendaraan",
+            "EditKey" => "Edit Key",
+            "HapusKey" => "Hapus Key",
             _ => key
         };
     }
@@ -115,7 +130,8 @@ public static class Menu
 
         try
         {
-            var response = await client.PostAsync($"{apiBaseUrl}/addKey", content);
+            // Memanggil endpoint AddKey di LoginController
+            var response = await client.PostAsync("https://localhost:7119/api/Login/addKey", content);
             Console.WriteLine(response.IsSuccessStatusCode
                 ? "Key berhasil dibuat."
                 : $"Gagal membuat key. Status: {response.StatusCode}");
@@ -125,7 +141,83 @@ public static class Menu
             Console.WriteLine("Terjadi kesalahan jaringan: " + ex.Message);
         }
     }
+    private static async Task TampilkanKey()
+    {
+        try
+        {
+            var response = await client.GetAsync("https://localhost:7119/api/Login/getKey");
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonResponse = await response.Content.ReadAsStringAsync();
+                var keyList = JsonSerializer.Deserialize<List<Key>>(jsonResponse);
 
+                Console.Clear();
+                Console.WriteLine("Daftar Key:");
+                Console.WriteLine("====================================");
+                foreach (var key in keyList)
+                {
+                    Console.WriteLine($"Username: {key.Username}");
+                    Console.WriteLine($"Role: {key.Role}");
+                    Console.WriteLine($"Key: {key.KeyValue}");
+                    Console.WriteLine("====================================");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"Gagal mengambil data key. Status: {response.StatusCode}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Terjadi kesalahan: {ex.Message}");
+        }
+    }
+    private static async Task HapusKey()
+    {
+        Console.Clear();
+        Console.WriteLine("Masukkan Username yang akan dihapus: ");
+        string username = Console.ReadLine();
+
+        try
+        {
+            var response = await client.DeleteAsync($"https://localhost:7119/api/Login/deleteKey/{username}");
+            Console.WriteLine(response.IsSuccessStatusCode
+                ? "Key berhasil dihapus."
+                : $"Gagal menghapus key. Status: {response.StatusCode}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Terjadi kesalahan: {ex.Message}");
+        }
+    }
+    private static async Task EditKey()
+    {
+        Console.Clear();
+        Console.WriteLine("Masukkan Username yang akan diupdate: ");
+        string username = Console.ReadLine();
+
+        Console.WriteLine("Masukkan Role baru: ");
+        string role = Console.ReadLine();
+
+        Console.WriteLine("Masukkan Key Value baru: ");
+        string keyValue = Console.ReadLine();
+
+        var updatedKey = new { Username = username, Role = role, KeyValue = keyValue };
+        var jsonContent = JsonSerializer.Serialize(updatedKey);
+        var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+        try
+        {
+            var response = await client.PutAsync($"https://localhost:7119/api/Login/updateKey/{username}", content);
+            Console.WriteLine(response.IsSuccessStatusCode
+                ? "Key berhasil diupdate."
+                : $"Gagal mengupdate key. Status: {response.StatusCode}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Terjadi kesalahan: {ex.Message}");
+        }
+    }
     private static async Task AddKendaraan()
     {
         Console.Clear();
@@ -278,9 +370,98 @@ public static class Menu
         await MenuDriver.TampilkanDataKerusakanDriver();
     }
 
-    // PENAMBAHAN tampilkan data kendaraan, tampilkan data kerusakan di driver, tampilkan data kerusakan yang dari driver ke admin (ADE FATHIA NURAINI)
-    public static async Task selectMenu()
+
+        public static async Task<string?> LoginAdmin()
+        {
+            Console.Clear();
+            Console.WriteLine("=== LOGIN ADMIN ===");
+            Console.Write("Masukkan Username: ");
+            string? username = Console.ReadLine();
+            Console.Write("Masukkan Key: ");
+            string? key = Console.ReadLine();
+
+            // Validate input
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(key))
+            {
+                Console.WriteLine("Username dan key harus diisi!");
+                await Task.Delay(1000);
+                return null;
+            }
+
+            try
+            {
+                var loginData = new { Username = username, Key = key };
+                var jsonContent = JsonSerializer.Serialize(loginData);
+                var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+                var response = await client.PostAsync("https://localhost:7119/api/Login/loginAdmin", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseBody = await response.Content.ReadAsStringAsync();
+                    using var doc = JsonDocument.Parse(responseBody);
+
+                    if (doc.RootElement.TryGetProperty("success", out var successElement) &&
+                        successElement.GetBoolean())
+                    {
+                        if (doc.RootElement.TryGetProperty("key", out var keyElement))
+                        {
+                            string apiKey = keyElement.GetString();
+                            Console.WriteLine("Login berhasil sebagai Admin.");
+                            await Task.Delay(1000);
+                            return apiKey;
+                        }
+                    }
+
+                    if (doc.RootElement.TryGetProperty("message", out var messageElement))
+                    {
+                        Console.WriteLine($"Login gagal: {messageElement.GetString()}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Login gagal. Format respons tidak valid.");
+                    }
+                }
+                else
+                {
+                    string errorDetail = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine("Login gagal. Status: " + response.StatusCode);
+
+                    try
+                    {
+                        var errorDoc = JsonDocument.Parse(errorDetail);
+                        if (errorDoc.RootElement.TryGetProperty("message", out var errorMessage))
+                        {
+                            Console.WriteLine($"Detail error: {errorMessage.GetString()}");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Detail error: {errorDetail}");
+                        }
+                    }
+                    catch
+                    {
+                        Console.WriteLine($"Detail error: {errorDetail}");
+                    }
+                }
+            }
+            catch (HttpRequestException ex)
+            {
+                Console.WriteLine($"Gagal terhubung ke server: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Terjadi kesalahan: {ex.Message}");
+            }
+
+            await Task.Delay(1000);
+            return null;
+        }
+
+        // PENAMBAHAN tampilkan data kendaraan, tampilkan data kerusakan di driver, tampilkan data kerusakan yang dari driver ke admin (ADE FATHIA NURAINI AND RELINGGAA)
+        public static async Task selectMenu()
     {
+       
         string inputUser;
         do
         {

@@ -15,15 +15,12 @@ namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers
         {
             new Kendaraan { Merek = "Toyota", PlatNomor = "AB123CD" },
             new Kendaraan { Merek = "Honda", PlatNomor = "EF456GH"},
-            new Kendaraan { Merek = "BMW", PlatNomor = "XY789ZT"}
+            new Kendaraan { Merek = "BMW", PlatNomor = "XY789ZT"},
+
         };
 
-       
 
-        private static List<Key> keyList = new List<Key>
-        {
-            new Key { Username = "admin", Role = "admin", KeyValue = "12345" }
-        };
+
 
         // Menggunakan generics dan parameterization untuk menambah item
         private static List<T> AddItem<T>(List<T> list, T item)
@@ -88,53 +85,8 @@ namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers
 
        
 
-        // API untuk mendapatkan semua key
-        [HttpGet("getKey")]
-        public IActionResult GetKey()
-        {
-            return Ok(keyList);
-        }
+        
 
-        // API untuk memperbarui key
-        [HttpPut("updateKey/{username}")]
-        public IActionResult UpdateKey(string username, [FromBody] Key updatedKey)
-        {
-            var key = keyList.Find(k => k.Username == username);
-            if (key == null)
-                return NotFound("Key tidak ditemukan!");
 
-            key.Username = updatedKey.Username;
-            key.Role = updatedKey.Role;
-            key.KeyValue = updatedKey.KeyValue;
-            return Ok("Key berhasil diperbarui!");
-        }
-
-        // API untuk menambah key
-        [HttpPost("addKey")]
-        public IActionResult AddKey([FromBody] Key key)
-        {
-            keyList = AddItem(keyList, key);  // Menambah key dengan generics
-            return CreatedAtAction(nameof(GetKey), new { username = key.Username }, key);
-        }
-
-        // API untuk menghapus key berdasarkan username
-        [HttpDelete("deleteKey/{username}")]
-        public IActionResult DeleteKey(string username)
-        {
-            var key = keyList.Find(k => k.Username == username);
-            if (key != null)
-            {
-                keyList.Remove(key);
-                return NoContent();
-            }
-            return NotFound("Key tidak ditemukan!");
-        }
-
-        [HttpGet("getTanggalHariIni")]
-        public IActionResult GetTanggalHariIni()
-        {
-            string tanggal = DateHelper.FormatIndo(DateTime.Now);
-            return Ok($"Hari ini: {tanggal}");
-        }
     }
 }
