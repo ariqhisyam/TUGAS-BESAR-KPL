@@ -1,8 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Text.Json;
-using System.Threading.Tasks;
+﻿using TUGASBESAR_kelompok_SagaraDailyCheckUp.Model;
 using TUGASBESAR_kelompok_SagaraDailyCheckUp;
-using TUGASBESAR_kelompok_SagaraDailyCheckUp.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +17,18 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
 
+// ✅ Tambahkan CORS
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy
+            .AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
 
 // Konfigurasi pipeline
@@ -30,12 +39,15 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+// ✅ Aktifkan CORS
+app.UseCors();
+
 app.UseAuthorization();
 app.MapControllers();
 
 // 🔥 Jalankan Web API sebagai background task
 var apiTask = Task.Run(() => app.RunAsync());
-
 
 // 🔥 Jalankan CLI Menu setelah API dimulai
 PilihMenu.PilihMenu1();

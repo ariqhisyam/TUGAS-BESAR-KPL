@@ -55,6 +55,8 @@ namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers
             }
             return NotFound("Kerusakan tidak ditemukan!");
         }
+ 
+
 
         private static List<T> AddItem<T>(List<T> list, T item)
         {
