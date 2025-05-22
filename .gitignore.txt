@@ -1,0 +1,9 @@
+# Ignore Visual Studio related folders and files
+.vs/
+*.vsidx
+*.db
+*.suo
+*.user
+# Ignore Visual Studio build folders
+obj/
+bin/
