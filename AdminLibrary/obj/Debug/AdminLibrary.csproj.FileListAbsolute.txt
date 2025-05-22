@@ -1,0 +1,6 @@
+E:\New folder\TUGAS-BESAR-KPL\AdminLibrary\bin\Debug\AdminLibrary.dll
+E:\New folder\TUGAS-BESAR-KPL\AdminLibrary\bin\Debug\AdminLibrary.pdb
+E:\New folder\TUGAS-BESAR-KPL\AdminLibrary\obj\Debug\AdminLibrary.csproj.AssemblyReference.cache
+E:\New folder\TUGAS-BESAR-KPL\AdminLibrary\obj\Debug\AdminLibrary.csproj.CoreCompileInputs.cache
+E:\New folder\TUGAS-BESAR-KPL\AdminLibrary\obj\Debug\AdminLibrary.dll
+E:\New folder\TUGAS-BESAR-KPL\AdminLibrary\obj\Debug\AdminLibrary.pdb

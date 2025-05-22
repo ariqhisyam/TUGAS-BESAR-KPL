@@ -46,7 +46,9 @@ public static class Menu
         string inputUser;
         do
         {
+            AdminLibrary.Adminlib admin = new AdminLibrary.Adminlib();
             Console.Clear();
+            admin.salam("Admin");
             Console.WriteLine("=== PILIH MENU ===");
             foreach (var item in menuLabels)
             {
@@ -82,7 +84,7 @@ public static class Menu
         {
             var json = await File.ReadAllTextAsync(path);
             var rawMenu = JsonSerializer.Deserialize<Dictionary<string, string>>(json);
-
+            
             foreach (var item in rawMenu)
             {
                 if (methodMap.TryGetValue(item.Value, out var method))

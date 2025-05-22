@@ -2,9 +2,12 @@
 {
     public class PilihMenu
     {
+       
         public static void PilihMenu1()
-        {
+        { //PUNYA FARRAS
+            AdminLibrary.Adminlib admin = new AdminLibrary.Adminlib();
             Console.Clear();
+            admin.salam("User");
             Console.WriteLine("Pilih menu:");
             Console.WriteLine("1. Menu Admin");
             Console.WriteLine("2. Menu Driver");

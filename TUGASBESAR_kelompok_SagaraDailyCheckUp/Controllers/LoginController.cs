@@ -13,7 +13,8 @@ namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers
         private static List<Key> keyList = new List<Key>
         {
             new Key { Username = "admin", Role = "admin", KeyValue = "12345" },
-             new Key { Username = "rey", Role = "driver", KeyValue = "1" }
+             new Key { Username = "rey", Role = "driver", KeyValue = "1" }, 
+             new Key { Username = "teknisi", Role = "teknisi", KeyValue = "123456" }
         };
         private static List<T> AddItem<T>(List<T> list, T item)
         {

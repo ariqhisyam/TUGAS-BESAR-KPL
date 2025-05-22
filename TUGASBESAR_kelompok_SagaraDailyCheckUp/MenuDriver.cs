@@ -26,6 +26,7 @@ public static class MenuDriver
 
     public static async Task<string?> LoginDriver()
     {
+      
         Console.Clear();
         Console.WriteLine("=== LOGIN DRIVER ===");
         Console.Write("Masukkan Username: ");
@@ -135,7 +136,10 @@ public static class MenuDriver
         string inputUser;
         do
         {
+            //PUNYA FARRAS 
             Console.Clear();
+            AdminLibrary.Adminlib admin = new AdminLibrary.Adminlib();
+            admin.salam("Driver");
             Console.WriteLine("PILIH MENU:");
             Console.WriteLine("1. Input Data Kerusakan");
             Console.WriteLine("2. Edit Data Kerusakan");

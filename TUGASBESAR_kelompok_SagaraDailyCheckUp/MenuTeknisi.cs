@@ -95,8 +95,10 @@ namespace TUGASBESAR_kelompok_SagaraDailyCheckUp
             };
 
             do
-            {
+            { //PUNYA FARRAS 
+                AdminLibrary.Adminlib admin = new AdminLibrary.Adminlib();
                 Console.Clear();
+                admin.salam("Teknisi");
                 Console.WriteLine("PILIH MENU:");
                 Console.WriteLine("1. Lihat Data Kerusakan");
                 Console.WriteLine("2. Keluar");
