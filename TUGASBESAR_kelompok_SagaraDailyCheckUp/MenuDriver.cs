@@ -241,7 +241,7 @@ public static class MenuDriver
     }
 
 
-    //Membenari dan menambahkan automata
+    //Membenari dan menambahkan automata Nur Ahmadi Aditya Nanda
     public static async Task EditDataKerusakan()
     {
         Console.WriteLine("Masukkan Plat Nomor Kendaraan yang ingin diedit: ");
