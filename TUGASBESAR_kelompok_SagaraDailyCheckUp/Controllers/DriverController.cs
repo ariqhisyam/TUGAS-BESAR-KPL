@@ -47,7 +47,7 @@ namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers
         [HttpDelete("deleteKerusakan/{platNomor}")]
         public IActionResult DeleteKerusakan(string platNomor)
         {
-            var kerusakan = kerusakanList.Find(k => k.PlatNomor == platNomor);
+            var kerusakan = kerusakanList.Find(k =>string.Equals(k.PlatNomor?.Trim(), platNomor?.Trim(), StringComparison.OrdinalIgnoreCase));
             if (kerusakan != null)
             {
                 kerusakanList.Remove(kerusakan);
