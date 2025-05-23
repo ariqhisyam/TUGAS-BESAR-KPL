@@ -12,8 +12,8 @@ namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers
     {
         private static List<Kerusakan> kerusakanList = new List<Kerusakan>
         {
-            new Kerusakan { Merek = "Toyota", PlatNomor = "AB123CD", Kendala = "Mesin Overheating" },
-            new Kerusakan { Merek = "Honda", PlatNomor = "EF456GH", Kendala = "AC Rusak" }
+            new Kerusakan { Merek = "Toyota", PlatNomor = "AB 123 CD", Kendala = "Mesin Overheating" },
+            new Kerusakan { Merek = "Honda", PlatNomor = "EF 456 GH", Kendala = "AC Rusak" }
         };
 
         // API untuk mendapatkan semua kerusakan

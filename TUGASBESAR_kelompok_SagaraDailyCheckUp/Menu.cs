@@ -226,8 +226,16 @@ public static class Menu
         Console.WriteLine("Masukkan Merek Kendaraan: ");
         string merek = Console.ReadLine();
 
-        Console.WriteLine("Masukkan Plat Nomor (contoh: B 1221 SJT): "); // Bagian ini 
-        string platNomor = Console.ReadLine();
+        Console.WriteLine("Masukkan Plat Nomor (contoh: B 1234 XYZ): ");
+        string platNomor = Console.ReadLine()?.Trim().ToUpper(); // Hilangkan spasi berlebih & kapital
+
+        // Validasi langsung format dengan spasi
+        string patternValid = @"^[A-Z]{1,2} [0-9]{1,4} [A-Z]{1,3}$";
+        if (!Regex.IsMatch(platNomor, patternValid))
+        {
+            Console.WriteLine("❌ Format plat nomor tidak valid! Contoh: B 1234 XYZ");
+            return;
+        }
 
         var kendaraan = new { Merek = merek, PlatNomor = platNomor };
         var content = new StringContent(JsonSerializer.Serialize(kendaraan), System.Text.Encoding.UTF8, "application/json");
@@ -236,14 +244,16 @@ public static class Menu
         {
             var response = await client.PostAsync($"{apiBaseUrl}/addKendaraan", content);
             Console.WriteLine(response.IsSuccessStatusCode
-                ? "Kendaraan berhasil ditambahkan."
-                : $"Gagal menambahkan kendaraan. Status: {response.StatusCode}");
+                ? "✅ Kendaraan berhasil ditambahkan."
+                : $"❌ Gagal menambahkan kendaraan. Status: {response.StatusCode}");
         }
         catch (HttpRequestException ex)
         {
-            Console.WriteLine("Terjadi kesalahan jaringan: " + ex.Message);
+            Console.WriteLine("⚠️ Terjadi kesalahan jaringan: " + ex.Message);
         }
     }
+
+
     // sampai sini mengalami perubahan (ADE FATHIA NURAINI)
 
     private static async Task UpdateKendaraan()
