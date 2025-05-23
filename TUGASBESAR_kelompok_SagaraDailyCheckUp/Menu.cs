@@ -302,16 +302,47 @@ public static class Menu
             Console.WriteLine("Terjadi kesalahan jaringan: " + ex.Message);
         }
     }
-
+    // Memperbaiki format plat nomor kendaraan dan automata (Nur Ahmadi Aditya Nanda)
     private static async Task DeleteKendaraan()
     {
         Console.Write("Masukkan Plat Nomor Kendaraan yang ingin dihapus (format: B 1234 XYZ): ");
         string inputPlat = Console.ReadLine().ToUpper();
 
+        // Normalisasi dan validasi menggunakan regex
+        Regex regexFormat = new Regex(@"^([A-Z]{1,2})(\d{1,4})([A-Z]{1,3})$");
+        if (regexFormat.IsMatch(inputPlat.Replace(" ", "")))
+        {
+            var match = regexFormat.Match(inputPlat.Replace(" ", ""));
+            inputPlat = $"{match.Groups[1].Value} {match.Groups[2].Value} {match.Groups[3].Value}";
+        }
+
+        string patternValid = @"^[A-Z]{1,2} [0-9]{1,4} [A-Z]{1,3}$";
+        if (!Regex.IsMatch(inputPlat, patternValid))
+        {
+            Console.WriteLine("Format plat nomor tidak valid! Contoh: B 1234 XYZ");
+            return;
+        }
+
+        // Konfirmasi sebelum hapus
+        Console.Write($"Apakah Anda yakin ingin menghapus kendaraan dengan plat {inputPlat}? (Y/N): ");
+        string confirm = Console.ReadLine().Trim().ToUpper();
+        if (confirm != "Y")
+        {
+            Console.WriteLine("Aksi dibatalkan.");
+            return;
+        }
+
         try
         {
             Console.Clear();
-            var response = await client.DeleteAsync($"{apiBaseUrl}/deleteKendaraan/{platNomor}");
+
+            // Tambahkan debug URL di sini:
+            Console.WriteLine($"[DEBUG] Request URL: {apiBaseUrl}/deleteKendaraan/{inputPlat}");
+
+            // Encode plat nomor untuk URL
+            var encodedPlat = Uri.EscapeDataString(inputPlat);
+            Console.WriteLine($"[DEBUG] URL: {apiBaseUrl}/deleteKendaraan/{encodedPlat}");
+            var response = await client.DeleteAsync($"{apiBaseUrl}/deleteKendaraan/{inputPlat}");
             Console.WriteLine(response.IsSuccessStatusCode
                 ? "Kendaraan berhasil dihapus."
                 : $"Gagal menghapus kendaraan. Status: {response.StatusCode}");
@@ -320,7 +351,9 @@ public static class Menu
         {
             Console.WriteLine("Terjadi kesalahan jaringan: " + ex.Message);
         }
+
     }
+
 
     private static async Task TampilkanDataKendaraan()
     {
@@ -497,7 +530,9 @@ public static class Menu
             Console.WriteLine("Tekan tombol apapun untuk melanjutkan...");
             Console.ReadKey();
         } while (true);
-    }
+        }
+
+
 
 
 }
