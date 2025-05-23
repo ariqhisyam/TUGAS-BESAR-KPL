@@ -4,3 +4,9 @@ E:\New folder\TUGAS-BESAR-KPL\AdminLibrary\obj\Debug\AdminLibrary.csproj.Assembl
 E:\New folder\TUGAS-BESAR-KPL\AdminLibrary\obj\Debug\AdminLibrary.csproj.CoreCompileInputs.cache
 E:\New folder\TUGAS-BESAR-KPL\AdminLibrary\obj\Debug\AdminLibrary.dll
 E:\New folder\TUGAS-BESAR-KPL\AdminLibrary\obj\Debug\AdminLibrary.pdb
+E:\DATA\kuliah\Semester4\kpl\tubes\TUBES-REVISI\TUGAS-BESAR-KPL\AdminLibrary\bin\Debug\AdminLibrary.dll
+E:\DATA\kuliah\Semester4\kpl\tubes\TUBES-REVISI\TUGAS-BESAR-KPL\AdminLibrary\bin\Debug\AdminLibrary.pdb
+E:\DATA\kuliah\Semester4\kpl\tubes\TUBES-REVISI\TUGAS-BESAR-KPL\AdminLibrary\obj\Debug\AdminLibrary.csproj.AssemblyReference.cache
+E:\DATA\kuliah\Semester4\kpl\tubes\TUBES-REVISI\TUGAS-BESAR-KPL\AdminLibrary\obj\Debug\AdminLibrary.csproj.CoreCompileInputs.cache
+E:\DATA\kuliah\Semester4\kpl\tubes\TUBES-REVISI\TUGAS-BESAR-KPL\AdminLibrary\obj\Debug\AdminLibrary.dll
+E:\DATA\kuliah\Semester4\kpl\tubes\TUBES-REVISI\TUGAS-BESAR-KPL\AdminLibrary\obj\Debug\AdminLibrary.pdb
