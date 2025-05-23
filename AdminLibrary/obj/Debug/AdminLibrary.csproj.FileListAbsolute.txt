@@ -10,3 +10,9 @@ E:\DATA\kuliah\Semester4\kpl\tubes\TUBES-REVISI\TUGAS-BESAR-KPL\AdminLibrary\obj
 E:\DATA\kuliah\Semester4\kpl\tubes\TUBES-REVISI\TUGAS-BESAR-KPL\AdminLibrary\obj\Debug\AdminLibrary.csproj.CoreCompileInputs.cache
 E:\DATA\kuliah\Semester4\kpl\tubes\TUBES-REVISI\TUGAS-BESAR-KPL\AdminLibrary\obj\Debug\AdminLibrary.dll
 E:\DATA\kuliah\Semester4\kpl\tubes\TUBES-REVISI\TUGAS-BESAR-KPL\AdminLibrary\obj\Debug\AdminLibrary.pdb
+E:\A. KPL 2025\A. TUGASBESARRR\AdminLibrary\bin\Debug\AdminLibrary.dll
+E:\A. KPL 2025\A. TUGASBESARRR\AdminLibrary\bin\Debug\AdminLibrary.pdb
+E:\A. KPL 2025\A. TUGASBESARRR\AdminLibrary\obj\Debug\AdminLibrary.csproj.AssemblyReference.cache
+E:\A. KPL 2025\A. TUGASBESARRR\AdminLibrary\obj\Debug\AdminLibrary.csproj.CoreCompileInputs.cache
+E:\A. KPL 2025\A. TUGASBESARRR\AdminLibrary\obj\Debug\AdminLibrary.dll
+E:\A. KPL 2025\A. TUGASBESARRR\AdminLibrary\obj\Debug\AdminLibrary.pdb
