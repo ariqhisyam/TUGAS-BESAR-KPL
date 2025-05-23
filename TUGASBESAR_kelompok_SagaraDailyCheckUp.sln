@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TUGASBESAR_kelompok_SagaraD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminLibrary", "AdminLibrary\AdminLibrary.csproj", "{9104C9F4-4DD8-4572-A59D-DB41E5DAAB6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject_Relinggaa", "TestProject_Relinggaa\TestProject_Relinggaa.csproj", "{8F0F5BEA-212A-4AF1-BD44-D62A2DA1251C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9104C9F4-4DD8-4572-A59D-DB41E5DAAB6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9104C9F4-4DD8-4572-A59D-DB41E5DAAB6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9104C9F4-4DD8-4572-A59D-DB41E5DAAB6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F0F5BEA-212A-4AF1-BD44-D62A2DA1251C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F0F5BEA-212A-4AF1-BD44-D62A2DA1251C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F0F5BEA-212A-4AF1-BD44-D62A2DA1251C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F0F5BEA-212A-4AF1-BD44-D62A2DA1251C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
