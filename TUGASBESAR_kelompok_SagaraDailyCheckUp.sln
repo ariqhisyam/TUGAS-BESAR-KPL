@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TUGASBESAR_kelompok_SagaraD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminLibrary", "AdminLibrary\AdminLibrary.csproj", "{9104C9F4-4DD8-4572-A59D-DB41E5DAAB6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTesting_Automata_Menucs_hapusDataKendaraan_NurAhmadiAdityaNanda", "UnitTesting_Automata_Menucs_hapusDataKendaraan_NurAhmadiAdityaNanda\UnitTesting_Automata_Menucs_hapusDataKendaraan_NurAhmadiAdityaNanda.csproj", "{CCB34B7E-0831-4B07-ABAA-FE9E011D6D22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTesting_CodeReuse_DateHelper_NurAhmadiAdityaNanda", "UnitTesting_CodeReuse_DateHelper_NurAhmadiAdityaNanda\UnitTesting_CodeReuse_DateHelper_NurAhmadiAdityaNanda.csproj", "{3F17DD1D-A874-4455-AEBB-1CBCB888EF2B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{9104C9F4-4DD8-4572-A59D-DB41E5DAAB6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9104C9F4-4DD8-4572-A59D-DB41E5DAAB6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9104C9F4-4DD8-4572-A59D-DB41E5DAAB6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB34B7E-0831-4B07-ABAA-FE9E011D6D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB34B7E-0831-4B07-ABAA-FE9E011D6D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB34B7E-0831-4B07-ABAA-FE9E011D6D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB34B7E-0831-4B07-ABAA-FE9E011D6D22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F17DD1D-A874-4455-AEBB-1CBCB888EF2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F17DD1D-A874-4455-AEBB-1CBCB888EF2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F17DD1D-A874-4455-AEBB-1CBCB888EF2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F17DD1D-A874-4455-AEBB-1CBCB888EF2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

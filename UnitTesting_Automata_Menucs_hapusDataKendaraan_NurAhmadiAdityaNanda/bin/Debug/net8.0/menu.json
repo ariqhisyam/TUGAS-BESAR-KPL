@@ -1,0 +1,11 @@
+{
+    "1": "CreateKey",
+    "2": "AddKendaraan",
+    "3": "UpdateKendaraan",
+    "4": "DeleteKendaraan",
+    "5": "TampilkanDataKendaraan",
+    "6": "TampilkanDataKerusakan",
+    "7": "TampilkanKey",
+    "8": "EditKey",
+    "9": "HapusKey"
+}
