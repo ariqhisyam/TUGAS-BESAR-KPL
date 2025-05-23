@@ -24,7 +24,8 @@ public static class Menu
         { "UpdateKendaraan", UpdateKendaraan },
         { "DeleteKendaraan", DeleteKendaraan },
         { "TampilkanDataKendaraan", TampilkanDataKendaraan },
-        { "TampilkanDataKerusakaan", TampilkanDataKerusakan },
+      { "TampilkanDataKerusakan", TampilkanDataKerusakan },
+
         { "TampilkanKey", TampilkanKey },
         { "EditKey", EditKey },
         { "HapusKey", HapusKey }
