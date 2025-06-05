@@ -36,7 +36,8 @@ namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers
         [HttpGet("getKendaraan")]
         public IActionResult GetKendaraan()
         {
-            return Ok(kendaraanList);
+            var orderedKendaraanList = kendaraanList.AsEnumerable().Reverse().ToList();
+            return Ok(orderedKendaraanList);
         }
 
         // API untuk mendapatkan kendaraan berdasarkan platNomor

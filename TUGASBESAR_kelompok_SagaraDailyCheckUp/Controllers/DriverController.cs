@@ -20,7 +20,8 @@ namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers
         [HttpGet("getKerusakan")]
         public IActionResult GetKerusakan()
         {
-            return Ok(kerusakanList);
+            var orderedKerusakanList = kerusakanList.AsEnumerable().Reverse().ToList();
+            return Ok(orderedKerusakanList);
         }
 
         // API untuk memperbarui kerusakan
@@ -32,6 +33,7 @@ namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers
                 return NotFound("Kerusakan tidak ditemukan!");
 
             kerusakan.Kendala = updatedKerusakan.Kendala;
+            kerusakan.Catatan = updatedKerusakan.Catatan;
             return Ok("Kerusakan berhasil diperbarui!");
         }
 

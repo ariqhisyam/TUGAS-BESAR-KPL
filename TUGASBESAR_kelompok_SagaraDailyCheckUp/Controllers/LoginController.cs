@@ -24,7 +24,8 @@ namespace TUGASBESAR_kelompok_SagaraDailyCheckUp.Controllers
         [HttpGet("getKey")]
         public IActionResult GetKey()
         {
-            return Ok(keyList);
+            var orderedKeyList = keyList.AsEnumerable().Reverse().ToList();
+            return Ok(orderedKeyList);
         }
 
         // API untuk memperbarui key
